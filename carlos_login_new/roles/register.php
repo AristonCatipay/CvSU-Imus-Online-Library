@@ -33,7 +33,7 @@
               <label class="role-label" id="ins-lbl">Instructor</label>
             </div>
 
-            <p class="signin">Already have an acccount? <a href="/../carlos_login_new/login/login.php">Sign in here!</p>
+            <p class="signin">Already have an acccount? <a href="../login/login.php">Sign in here!</p>
           </div><!-- BOX ITEMS END(ARIS)-->
         </div> <!-- BOX DESIGN END(ARIS)-->
       </div> <!-- CONTAINER-TRANSITION START(ARIS)-->

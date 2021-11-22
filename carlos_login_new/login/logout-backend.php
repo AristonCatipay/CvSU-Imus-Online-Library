@@ -17,6 +17,6 @@ session_start();
     {
         unset($_SESSION['admin_number']);
     }
-header('Location: /../carlos_login_new/login/login.php');
+header('Location: ../login/login.php');
 die();
 ?>

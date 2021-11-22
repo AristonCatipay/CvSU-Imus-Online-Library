@@ -33,7 +33,7 @@ session_start();
             $query = "insert into students(student_number,student_name,student_email,student_password,student_course,student_gender,student_contact) 
             values ('$student_number','$student_name','$student_email','$student_password_1','$student_course','$student_gender','$student_contact')";
             mysqli_query($con,$query);
-            header("Location:/../carlos_login_new/login/login.php");
+            header("Location: ../login/login.php");
             die;
         }
         mysqli_close($con);
