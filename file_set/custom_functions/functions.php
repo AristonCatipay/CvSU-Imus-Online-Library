@@ -50,7 +50,7 @@ function check_login($con)
         } 
     }
     // redirect to login
-    header('Location: /../carlos_login_new/login/login.php');
+    header('Location: /../file_set/login/login.php');
     die;
 }
 function random_num($length){

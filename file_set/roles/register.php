@@ -2,9 +2,9 @@
   <html class="animated fadeIn">
     <head>
       <title>Sign Up | CVSU Imus - Online Library</title>
-    <link rel = "stylesheet" href = "../css/register.css">
+    <link rel="stylesheet" href="../css/register.css">
     <link rel="stylesheet" href="../css/animate.css">
-    <link rel="shortcut icon" type="image/png" href="css/pics/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="../css/pics/favicon.png"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
 
@@ -24,13 +24,13 @@
             <br>
 
             <div class="role-buttons" id="rl-btn">
-              <a href="/../carlos_login_new/roles/student-reg.php" class="student"><button id="st-rl"></button></a>
+              <a href="../roles/student-reg.php" class="student"><button id="st-rl"></button></a>
               <label class="role-label" id="st-lbl">Student</label>
             </div>
 
             <div class="role-buttons" id="rl-btn">
-              <a href="/../carlos_login_new/roles/instructor-reg.php" class="instructor"><button id="ins-rl"></button></a>
-              <label class="role-label" id="ins-lbl">Instructor</label>
+              <a href="../roles/instructor-reg.php" class="instructor"><button id="ins-rl"></button></a>
+              <label class="role-label" id="i ns-lbl">Instructor</label>
             </div>
 
             <p class="signin">Already have an acccount? <a href="../login/login.php">Sign in here!</p>

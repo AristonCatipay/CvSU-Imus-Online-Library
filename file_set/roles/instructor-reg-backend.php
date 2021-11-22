@@ -32,7 +32,7 @@ session_start();
             $query = "insert into instructors(instructor_number,instructor_name,instructor_email,instructor_password,instructor_department,instructor_gender,instructor_contact) 
             values ('$instructor_number','$instructor_name','$instructor_email','$instructor_password_1','$instructor_department','$instructor_gender','$instructor_contact')";
             mysqli_query($con,$query);
-            header("Location:/../carlos_login_new/login/login.php");
+            header("Location: ../login/login.php");
             die;
         }
         mysqli_close($con);

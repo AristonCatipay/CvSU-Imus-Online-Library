@@ -18,8 +18,8 @@
         </div>
 
         <div class="wt-btns">
-          <a href="/../carlos_login_new/home-admin-staff/admin/home-admin-buttons/admin-add-book.php"><button id="bt1">Add Books</button></a>
-          <a href="/../carlos_login_new/home-admin-staff/admin/home-admin-buttons/admin-add-thesis.php"><button id="bt2">Add Thesis</button></a>
+          <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/home-admin-buttons/admin-add-book.php"><button id="bt1">Add Books</button></a>
+          <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/home-admin-buttons/admin-add-thesis.php"><button id="bt2">Add Thesis</button></a>
         </div>
       </div>
   </body>

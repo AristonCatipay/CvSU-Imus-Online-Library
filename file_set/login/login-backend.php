@@ -53,7 +53,7 @@ session_start();
                         echo 'Password is Correct';
                         $_SESSION['instructor_number'] = $user_data['instructor_number'];
                         $_SESSION['user_role'] = 'instructor';
-                        header("Location: /../carlos_login_new/home-student-instructor/instructor/home-instructor.php");
+                        header("Location: ../home-student-instructor/instructor/home-instructor.php");
                         mysqli_close($con);
                         die;
                     } 
@@ -82,7 +82,7 @@ session_start();
                         echo 'Password is Correct';
                         $_SESSION['staff_number'] = $user_data['staff_number'];
                         $_SESSION['user_role'] = 'staff';
-                        header("Location: /../carlos_login_new/home-admin-staff/staff/home-staff.php");
+                        header("Location: ../home-admin-staff/staff/home-staff.php");
                         mysqli_close($con);
                         die;
                     } 
@@ -111,7 +111,7 @@ session_start();
                         echo 'Password is Correct';
                         $_SESSION['admin_number'] = $user_data['admin_number'];
                         $_SESSION['user_role'] = 'admins';
-                        header("Location: /../carlos_login_new/home-admin-staff/admin/home-admin.php");
+                        header("Location: ../home-admin-staff/admin/home-admin.php");
                         mysqli_close($con);
                         die;
                     } 

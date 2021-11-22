@@ -13,7 +13,7 @@
                 mysqli_close($con);
             } 
         }else{
-            header("Location: /../carlos_login_new/login/logout-backend.php");
+            header("Location: /../cvsu-imus-online-library/file_set/login/logout-backend.php");
             die;
         }
     }

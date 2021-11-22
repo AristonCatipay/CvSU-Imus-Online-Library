@@ -5,9 +5,9 @@
 
     <head>
         <title>Sign Up | CVSU Imus - Online Library</title>
-          <link rel = "stylesheet" href = "../css/student-reg.css">
+          <link rel="stylesheet" href="../css/student-reg.css">
           <link rel="stylesheet" href="../css/animate.css">
-          <link rel="shortcut icon" type="image/png" href="css/pics/favicon.png"/>
+          <link rel="shortcut icon" type="image/png" href="../css/pics/favicon.png"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
 
@@ -127,27 +127,4 @@
         </div> <!-- BOX DESIGN END(ARIS)-->
       </div> <!-- CONTAINER TRANSITION END(ARIS)-->
     </body>
-
-    <script>
-       // document.getElementById('rl').addEventListener('change', function () {
-       //         'use strict';
-       //         var vis = document.querySelector('.vis'),
-       //             target = document.getElementById(this.value);
-       //         if (vis !== null) {
-       //             vis.className = 'inv';
-       //         }
-       //         if (target !== null ) {
-       //             target.className = 'vis';
-       //         }
-       // });
-
-      //     $(document).ready(function () {
-      //         $('.inv').hide();
-      //         $('#student').show();
-      //     $('#rl').change(function () {
-      //         $('.inv').hide();
-      //         $('#'+$(this).val()).show();
-      //   })
-      // });
-    </script>
 </html>
