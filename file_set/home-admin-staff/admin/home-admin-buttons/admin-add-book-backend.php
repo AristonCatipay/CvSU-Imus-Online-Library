@@ -1,5 +1,6 @@
 <?php
 include '../../../database/database_connection.php';
+include '../../reusable_function/functions.php';
 
 if (isset($_POST["submit"])){
     $department_id = $_POST["department_id"];
@@ -32,9 +33,11 @@ if (isset($_POST["submit"])){
     $overviewPhotoError = extract_error($overview_photo_location);
     $tableOfContentsPhotoError = extract_error($table_of_contents_location);
 
+    $allowedExtension = array('jpg', 'jpeg', 'png');
+
     if ($department_id === '1'){
 
-        if (check_file_extension($titlePhotoExt) && check_file_extension($overviewPhotoExt) && check_file_extension($tableOfContentsPhotoExt)){
+        if (check_file_extension($titlePhotoExt,$allowedExtension) && check_file_extension($overviewPhotoExt,$allowedExtension) && check_file_extension($tableOfContentsPhotoExt,$allowedExtension)){
             if (check_upload_error($titlePhotoError) && check_upload_error($overviewPhotoError) && check_upload_error($tableOfContentsPhotoError)){
                 if(check_file_size($titlePhotoSize) && check_file_size($overviewPhotoSize) && check_file_size($tableOfContentsPhotoSize)){
                     $location = '../../../book-images/DBPS/';
@@ -341,69 +344,4 @@ function sql_query ($con, $departmentId, $bookTitle, $titlePhotoLocation, $overv
     $queryResult = mysqli_query($con,$query);
     return $queryResult;
 }
-
-// Extraction of different data in a file
-
-function extract_name($fileName){
-    $name = $fileName['name'];
-    return $name;
-}
-
-function extract_tmp_name($fileName){
-    $tmpName = $fileName['tmp_name'];
-    return $tmpName; 
-}
-
-function extract_size($fileName){
-    $size =  $fileName['size'];
-    return $size;
-}
-
-function extract_error($fileName){
-    $error = $fileName['error'];
-    return $error;
-}
-
-function extract_ext($fileName){
-    $partialExt = explode(".", $fileName);
-    $extension = strtolower(end($partialExt));
-    return $extension;
-}
-
-// End of Extraction function
-
-function file_destination($directory ,$renamedFile){
-    $fileUploadDestination = $directory.$renamedFile;
-    return $fileUploadDestination;
-}
-
-function check_file_extension($fileActualExtention) {
-    $allowedExtension = array('jpg', 'jpeg', 'png');
-    if (in_array($fileActualExtention, $allowedExtension)){
-        return true;
-    } else {
-        return false;
-    }
-}
-function check_upload_error($fileError){
-    if ($fileError === 0){
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function check_file_size($fileSize){
-    if ($fileSize < 1000000){
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function rename_file($extractedExt){
-    $renamedFile = uniqid('', true).".".$extractedExt;
-    return $renamedFile;
-}
-
 ?>
