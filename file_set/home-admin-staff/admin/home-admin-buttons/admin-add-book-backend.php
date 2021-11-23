@@ -69,7 +69,7 @@ if (isset($_POST["submit"])){
     }
     if ($department_id === '2'){
 
-        if (check_file_extension($titlePhotoExt) && check_file_extension($overviewPhotoExt) && check_file_extension($tableOfContentsPhotoExt)){
+        if (check_file_extension($titlePhotoExt,$allowedExtension) && check_file_extension($overviewPhotoExt,$allowedExtension) && check_file_extension($tableOfContentsPhotoExt,$allowedExtension)){
             if (check_upload_error($titlePhotoError) && check_upload_error($overviewPhotoError) && check_upload_error($tableOfContentsPhotoError)){
                 if(check_file_size($titlePhotoSize) && check_file_size($overviewPhotoSize) && check_file_size($tableOfContentsPhotoSize)){
                     $location = '../../../book-images/DCS/';
@@ -101,7 +101,7 @@ if (isset($_POST["submit"])){
     }
     if ($department_id === '3'){
 
-        if (check_file_extension($titlePhotoExt) && check_file_extension($overviewPhotoExt) && check_file_extension($tableOfContentsPhotoExt)){
+        if (check_file_extension($titlePhotoExt,$allowedExtension) && check_file_extension($overviewPhotoExt,$allowedExtension) && check_file_extension($tableOfContentsPhotoExt,$allowedExtension)){
             if (check_upload_error($titlePhotoError) && check_upload_error($overviewPhotoError) && check_upload_error($tableOfContentsPhotoError)){
                 if(check_file_size($titlePhotoSize) && check_file_size($overviewPhotoSize) && check_file_size($tableOfContentsPhotoSize)){
                     $location = '../../../book-images/DE/';
@@ -133,7 +133,7 @@ if (isset($_POST["submit"])){
     }
     if ($department_id === '4'){
 
-        if (check_file_extension($titlePhotoExt) && check_file_extension($overviewPhotoExt) && check_file_extension($tableOfContentsPhotoExt)){
+        if (check_file_extension($titlePhotoExt,$allowedExtension) && check_file_extension($overviewPhotoExt,$allowedExtension) && check_file_extension($tableOfContentsPhotoExt,$allowedExtension)){
             if (check_upload_error($titlePhotoError) && check_upload_error($overviewPhotoError) && check_upload_error($tableOfContentsPhotoError)){
                 if(check_file_size($titlePhotoSize) && check_file_size($overviewPhotoSize) && check_file_size($tableOfContentsPhotoSize)){
                     $location = '../../../book-images/DHM/';
@@ -165,7 +165,7 @@ if (isset($_POST["submit"])){
     }
     if ($department_id === '5'){
 
-        if (check_file_extension($titlePhotoExt) && check_file_extension($overviewPhotoExt) && check_file_extension($tableOfContentsPhotoExt)){
+        if (check_file_extension($titlePhotoExt,$allowedExtension) && check_file_extension($overviewPhotoExt,$allowedExtension) && check_file_extension($tableOfContentsPhotoExt,$allowedExtension)){
             if (check_upload_error($titlePhotoError) && check_upload_error($overviewPhotoError) && check_upload_error($tableOfContentsPhotoError)){
                 if(check_file_size($titlePhotoSize) && check_file_size($overviewPhotoSize) && check_file_size($tableOfContentsPhotoSize)){
                     $location = '../../../book-images/DLMC/';
@@ -197,7 +197,7 @@ if (isset($_POST["submit"])){
     }
     if ($department_id === '6'){
 
-        if (check_file_extension($titlePhotoExt) && check_file_extension($overviewPhotoExt) && check_file_extension($tableOfContentsPhotoExt)){
+        if (check_file_extension($titlePhotoExt,$allowedExtension) && check_file_extension($overviewPhotoExt,$allowedExtension) && check_file_extension($tableOfContentsPhotoExt,$allowedExtension)){
             if (check_upload_error($titlePhotoError) && check_upload_error($overviewPhotoError) && check_upload_error($tableOfContentsPhotoError)){
                 if(check_file_size($titlePhotoSize) && check_file_size($overviewPhotoSize) && check_file_size($tableOfContentsPhotoSize)){
                     $location = '../../../book-images/DM/';
@@ -229,7 +229,7 @@ if (isset($_POST["submit"])){
     }
     if ($department_id === '7'){
 
-        if (check_file_extension($titlePhotoExt) && check_file_extension($overviewPhotoExt) && check_file_extension($tableOfContentsPhotoExt)){
+        if (check_file_extension($titlePhotoExt,$allowedExtension) && check_file_extension($overviewPhotoExt,$allowedExtension) && check_file_extension($tableOfContentsPhotoExt,$allowedExtension)){
             if (check_upload_error($titlePhotoError) && check_upload_error($overviewPhotoError) && check_upload_error($tableOfContentsPhotoError)){
                 if(check_file_size($titlePhotoSize) && check_file_size($overviewPhotoSize) && check_file_size($tableOfContentsPhotoSize)){
                     $location = '../../../book-images/DSSH/';
@@ -261,7 +261,7 @@ if (isset($_POST["submit"])){
     }
     if ($department_id === '8'){
 
-        if (check_file_extension($titlePhotoExt) && check_file_extension($overviewPhotoExt) && check_file_extension($tableOfContentsPhotoExt)){
+        if (check_file_extension($titlePhotoExt,$allowedExtension) && check_file_extension($overviewPhotoExt,$allowedExtension) && check_file_extension($tableOfContentsPhotoExt,$allowedExtension)){
             if (check_upload_error($titlePhotoError) && check_upload_error($overviewPhotoError) && check_upload_error($tableOfContentsPhotoError)){
                 if(check_file_size($titlePhotoSize) && check_file_size($overviewPhotoSize) && check_file_size($tableOfContentsPhotoSize)){
                     $location = '../../../book-images/PED/';
@@ -293,7 +293,7 @@ if (isset($_POST["submit"])){
     }
     if ($department_id === '9'){
 
-        if (check_file_extension($titlePhotoExt) && check_file_extension($overviewPhotoExt) && check_file_extension($tableOfContentsPhotoExt)){
+        if (check_file_extension($titlePhotoExt,$allowedExtension) && check_file_extension($overviewPhotoExt,$allowedExtension) && check_file_extension($tableOfContentsPhotoExt,$allowedExtension)){
             if (check_upload_error($titlePhotoError) && check_upload_error($overviewPhotoError) && check_upload_error($tableOfContentsPhotoError)){
                 if(check_file_size($titlePhotoSize) && check_file_size($overviewPhotoSize) && check_file_size($tableOfContentsPhotoSize)){
                     $location = '../../../book-images/TED/';
