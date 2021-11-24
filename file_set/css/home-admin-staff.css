@@ -125,6 +125,14 @@ body{
   letter-spacing: 30px;
   font-family: 'Fashion Fetish', sans-serif;
 }
+.user{
+  color: white;
+  font-family: 'Fashion Fetish Outline', sans-serif;
+  font-size: 30px;
+  padding-top: 30px;
+  text-shadow: 3px 3px grey;
+  text-decoration: overline;
+}
 .wt-btns a{
     text-decoration: none;
 }

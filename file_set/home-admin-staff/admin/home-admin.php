@@ -13,7 +13,7 @@
           <p id="wt3"> ONLINE LIBRARY </p>
           <?php
             $user_name = $user_data['admin_name'];
-            echo $user_name;  
+            echo "<p class='user'>" .$user_name. "</p>";
           ?>
         </div>
 
