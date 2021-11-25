@@ -39,6 +39,9 @@ body{
   width: 650px;
   height: auto;
 }
+#h2gnd{
+  margin-left: 25px;
+}
 h2{
   margin-left: 45px;
 }
@@ -70,7 +73,38 @@ h5{
   border-radius: 5px;
   font-size: 16px;
 }
-#name, #email, #birthday, #username, #studnum, #add, #password, #confirm_password, #cnt{
+#name, #email, #instnum, #password, #confirm_password, #cnt{
+  margin-bottom: 18px;
+  height: 38px;
+  border: 2px solid green;
+  border-radius: 5px;
+}
+#gnd, #crs{
+  height: 50px;
+  border: 2px solid green;
+  border-radius: 5px;
+ }
+ #name, #email, #instnum, #crs, #password, #confirm_password{
+   width: 85%;
+ }
+ #gndr{
+   margin-left: 20px;
+ }
+#gndr, #cont{
+  width: 40%;
+  float: left;
+}
+#gnd{
+  width: 80%;
+}
+#cnt{
+  width: 122%;
+}
+#changerole{
+  width: 93%;
+  float: left;
+}
+/* #name, #email, #instnum, #password, #confirm_password, #cnt{
   margin-bottom: 18px;
   height: 38px;
   border: 2px solid green;
@@ -81,22 +115,22 @@ h5{
    border: 2px solid green;
    border-radius: 5px;
  }
-#gndr, #bdy{
+#gndr, #cnt{
   display: inline-block;
 }
-#usr, #sn{
+#usr, #instnum{
   display: inline-block;
 }
 #psw, #cpsw{
   display: inline-block;
 }
-#name, #email, #cnt, #add{
+#name, #email{
   width: 550px;
 }
-#birthday, #username, #studnum, #password, #confirm_password{
+#password, #confirm_password, #cnt{
   width: 250px;
 }
-#username, #password, #gnd{
+#password, #gnd{
   margin-right: 42px;
 }
 #crs{
@@ -106,16 +140,16 @@ h5{
 #gnd{
   width: 257px;
   font-size: 16px;
-}
+} */
 #name:focus,#email:focus,#add:focus,#cnt:focus,#rl:focus{
   outline: none;
   border: 2px solid #32CD32;
 }
-#gnd:focus,#crs:focus,#birthday:focus,#studnum:focus,#password:focus,#confirm_password:focus,#username:focus{
+#gnd:focus,#crs:focus,#birthday:focus,#instnum:focus,#password:focus,#confirm_password:focus,#username:focus{
   outline: none;
   border: 2px solid #32CD32;
 }
-#back, #btn{
+/* #back, #btn{
   display: inline-block;
 }
 #subtn, #backbtn{
@@ -141,10 +175,10 @@ h5{
 }
 #subtn:active #fr, #backbtn:active #fr {
   transform: translateY(-2px);
-}
+} */
 p.signup{
   text-align: center;
-  margin-top: 45px;
+  margin-top: 90px;
   font-size: 17px;
   font-style: italic;
   font-family: 'Open Sans', sans-serif;
@@ -157,11 +191,10 @@ p.signup{
    font-weight: 400;
    text-indent: 10px;
 }
-#bt1, #bt2{
-  display: inline;
+#bt1{
   color: black;
   background: none;
-  width: 18%;
+  width: 20%;
   height: 60px;
   font-family: 'Fashion Fetish', sans-serif;
   font-size: 20px;
@@ -174,7 +207,32 @@ p.signup{
   text-decoration: none;
   transition: ease-out 0.5s;
 }
-#bt1:hover, #bt2:hover{
+/* #bt2{
+  width: 32%;
+  height: 50px;
+  font-size: 15px;
+  float: right;
+  margin: 20px 0 0 0;
+} */
+#bt2{
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  float: right;
+  margin: 10px 0 0 0;
+  font-family: 'Fashion Fetish', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  background-image: url("../css/pics/changerole.png");
+  background-size: cover;
+  background-color: green;
+  border: 2px solid green;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+#bt1:hover{
   box-shadow: inset 300px 0 0 0 green;
   color: white;
   text-decoration: none;

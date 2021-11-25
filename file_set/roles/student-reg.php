@@ -25,8 +25,8 @@
               <div id="rol">
                 <h5>Create Account Student</h5>
               </div>
-         
-          
+
+
 
             <div id="student" class="inv">
               <form method="post" action="student-reg-backend.php">  <!-- STUDENT FORM(ARIS)-->
@@ -34,15 +34,15 @@
 
                   <!-- NAME(ARIS)-->
                   <div id="nm">
-                    <h2>Name(S-F-M)</h2>
-                      <input class="input-field" type = "text" id = "name" name = "student_name" placeholder="Name" pattern=".{6,}" maxlength = "75" required title="6 characters minimum, 75 characters maximum">
+                    <h2>Full Name</h2>
+                      <input class="input-field" type = "text" id = "name" name = "student_name" placeholder="Surname - First - Middle" pattern=".{6,}" maxlength = "75" required title="6 characters minimum, 75 characters maximum">
                       <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END NAME(ARIS)-->
 
                   <!-- EMAIL(ARIS)-->
                   <div id="eml">
-                    <h2>Cvsu Email</h2>
+                    <h2>CVSU Email</h2>
                       <input class="input-field" type = "email" id = "email" name = "student_email" placeholder = "Email" maxlength = "75" required>
                       <i id="emaillogo" class="fa fa-envelope fa-lg" aria-hidden="true"></i>
                   </div>
@@ -50,28 +50,32 @@
 
                   <!-- STUDENT NUMBER(ARIS)-->
                   <div id="sn">
-                    <h3>Student Number</h3>
-                      <input class="input-field" type = "text" id = "studnum" name = "student_number" placeholder = "Student Number" maxlength = "20" required>
+                    <h2>Student Number</h2>
+                      <input class="input-field" type = "text" id = "studnum" name = "student_number" placeholder = "e.g., 201910860" maxlength = "20" required>
                       <i id="emaillogo" class="fa fa-envelope fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END STUDENT NUMBER(ARIS)-->
 
-                  <!-- STUDENT PASSWORD(ARIS)-->
-                  <div id="psw">
-                    <h3>Password</h3>
-                    <input class="input-field" type = "password" id = "password" name = "student_password_1" placeholder = "Password" pattern=".{8,}" required title="8 characters minimum, 75 characters maximum">
-                    <i id="passlogo" class="fa fa-lock fa-lg" aria-hidden="true"></i>
-                    <span toggle="#password-field" class="fa fa-fw fa-eye-slash fa-lg field_icon toggle-password"></span>
+                  <!-- STUDENT GENDER(ARIS)-->
+                  <div id="gndr">
+                    <h2 id="h2gnd">Gender</h2>
+                        <select name="student_gender" id="gnd" required>
+                            <option value="g1" disabled selected hidden>- - -</option>
+                            <option name="student_gender" value="Male">Male</option>
+                            <option name="student_gender" value="Female">Female</option>
+                            <option name="student_gender" value="Others">Others</option>
+                        </select>
                   </div>
-                  <!-- END STUDENT PASSWORD(ARIS)-->
+                  <!-- END STUDENT GENDER(ARIS)-->
 
-                  <!-- STUDENT PASSWORD CONFIRMATION(ARIS)-->
-                  <div id="cpsw">
-                    <h3>Confirm Password</h3>
-                      <input class="input-field" type = "password" id = "confirm_password" name = "student_password_2" placeholder = "Confirm Password" pattern=".{8,}" required title="8 characters minimum, 75 characters maximum">
-                      <i id="confpasslogo" class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                  <!-- STUDENT CONTACT NUMBER(ARIS)-->
+                  <div id="cont">
+                    <h3>Contact Number</h3>
+                    <input class="input-field" type = "text" id = "cnt" name = "student_contact" placeholder = "e.g., 09123456789" pattern=".{6,}" maxlength = "11" required title="6 characters minimum, 11 characters maximum">
+                    <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
                   </div>
-                  <!-- END STUDENT PASSWORD CONFIRMATION(ARIS)-->
+                  <!-- END STUDENT CONTACT NUMBER(ARIS)-->
+
 
                 </div> <!-- LEFT END(ARIS)-->
 
@@ -93,32 +97,35 @@
                     </div>
                     <!-- END STUDENT COURSE(ARIS)-->
                     <br>
-                    <!-- STUDENT GENDER(ARIS)-->
-                    <div id="gndr">
-                      <h3>Gender</h3>
-                          <select name="student_gender" id="gnd" required>
-                              <option value="g1" disabled selected hidden>- - -</option>
-                              <option name="student_gender" value="Male">Male</option>
-                              <option name="student_gender" value="Female">Female</option>
-                              <option name="student_gender" value="Others">Others</option>
-                          </select>
-                    </div>
-                    <!-- END STUDENT GENDER(ARIS)-->
 
-                    <!-- STUDENT CONTACT NUMBER(ARIS)-->
-                    <div id="cont">
-                      <h2>Contact +639</h2>
-                      <input class="input-field" type = "text" id = "cnt" name = "student_contact" placeholder = "Contact" pattern=".{6,}" maxlength = "11" required title="6 characters minimum, 11 characters maximum">
-                      <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
+                    <!-- STUDENT PASSWORD(ARIS)-->
+                    <div id="psw">
+                      <h2>Password</h2>
+                      <input class="input-field" type = "password" id = "password" name = "student_password_1" placeholder = "Password" pattern=".{8,}" required title="8 characters minimum, 75 characters maximum">
+                      <i id="passlogo" class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                      <span toggle="#password-field" class="fa fa-fw fa-eye-slash fa-lg field_icon toggle-password"></span>
                     </div>
-                    <!-- END STUDENT CONTACT NUMBER(ARIS)-->
+                    <!-- END STUDENT PASSWORD(ARIS)-->
+
+                    <!-- STUDENT PASSWORD CONFIRMATION(ARIS)-->
+                    <div id="cpsw">
+                      <h2>Confirm Password</h2>
+                        <input class="input-field" type = "password" id = "confirm_password" name = "student_password_2" placeholder = "Confirm Password" pattern=".{8,}" required title="8 characters minimum, 75 characters maximum">
+                        <i id="confpasslogo" class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <!-- END STUDENT PASSWORD CONFIRMATION(ARIS)-->
+
+                    <div id="changerole">
+                      <a href="instructor-reg.php" style="text-decoration: none!important;"><input class="change" type = "button"
+                      onclick="return confirm('Are you sure you want to change role?');" id="bt2"
+                      required title="CHANGE ROLE"></a>
+                    </div>
 
                 </div><!-- END RIGHT(ARIS)-->
 
                   <input type="submit" name="student_register" value ="SIGN UP" id="bt1">
 
-                  <a href="instructor-reg.php" style="text-decoration: none!important;"><input class="change" type = "button"
-                  value = "CHANGE ROLE"  onclick="return confirm('Are you sure you want to change role?');" id="bt2"></a>
+
 
                   <p class="signup">Already have account?<a href="../login/login.php"> Sign in here!</a></p>
               </form> <!-- STUDENT FORM END(ARIS)-->
