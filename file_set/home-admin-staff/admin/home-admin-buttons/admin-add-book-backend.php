@@ -56,7 +56,7 @@ if (isset($_POST["submit"])){
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: admin-add-book.php?uploadsuccessful');
+                    header('Location: ../home-admin.php?uploadsuccessful');
                 } else {
                     echo "File/s too Big!";
                 }
@@ -88,7 +88,7 @@ if (isset($_POST["submit"])){
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: admin-add-book.php?uploadsuccessful');
+                    header('Location: ../home-admin.php?uploadsuccessful');
                 } else {
                     echo "File/s too Big!";
                 }
@@ -120,7 +120,7 @@ if (isset($_POST["submit"])){
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: admin-add-book.php?uploadsuccessful');
+                    header('Location: ../home-admin.php?uploadsuccessful');
                 } else {
                     echo "File/s too Big!";
                 }
@@ -152,7 +152,7 @@ if (isset($_POST["submit"])){
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: admin-add-book.php?uploadsuccessful');
+                    header('Location: ../home-admin.php?uploadsuccessful');
                 } else {
                     echo "File/s too Big!";
                 }
@@ -184,7 +184,7 @@ if (isset($_POST["submit"])){
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: admin-add-book.php?uploadsuccessful');
+                    header('Location: ../home-admin.php?uploadsuccessful');
                 } else {
                     echo "File/s too Big!";
                 }
@@ -216,7 +216,7 @@ if (isset($_POST["submit"])){
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: admin-add-book.php?uploadsuccessful');
+                    header('Location: ../home-admin.php?uploadsuccessful');
                 } else {
                     echo "File/s too Big!";
                 }
@@ -248,7 +248,7 @@ if (isset($_POST["submit"])){
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: admin-add-book.php?uploadsuccessful');
+                    header('Location: ../home-admin.php?uploadsuccessful');
                 } else {
                     echo "File/s too Big!";
                 }
@@ -280,7 +280,7 @@ if (isset($_POST["submit"])){
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: admin-add-book.php?uploadsuccessful');
+                    header('Location: ../home-admin.php?uploadsuccessful');
                 } else {
                     echo "File/s too Big!";
                 }
@@ -312,7 +312,7 @@ if (isset($_POST["submit"])){
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: admin-add-book.php?uploadsuccessful');
+                    header('Location: ../home-admin.php?uploadsuccessful');
                 } else {
                     echo "File/s too Big!";
                 }

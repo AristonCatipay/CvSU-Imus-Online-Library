@@ -24,7 +24,7 @@
 
   <!-- ADD BOOKS CONTAINER -->
 
-  <form action="home-admin-buttons/admin-add-book-backend.php" method="post">
+  <form action="home-admin-buttons/admin-add-book-backend.php" method="post" enctype="multipart/form-data">
           <div class="add-books" id="add-b">
             <div class="a-b-container">
               <span class="close">&times;</span><p class="btn-header">Add Book:</p>
@@ -33,6 +33,9 @@
                     <div class="a-b-inputs" id="b-title">
                       <label>Book Title: </label>
                       <input class="inp" type = "text" id = "book-title" name = "book_title" style="font-size:18px;">
+
+                      <label><br>Date Published: </label>
+                      <input class="inp" type = "date" id = "book-title" name = "date_published" style="font-size:18px;">
                     </div>
 
                     <div class="a-b-inputs" id="b-wrapper1">
@@ -46,14 +49,24 @@
                   <div class="a-b-inputs" id="b-wrapper2">
                       <label>Designated Department: </label>
                         <select class="inp" name="department_id" id="department_id" required style="font-size:18px;">
-                            <option value="g1" disabled selected hidden>- - -</option>
+                            <!--<option value="g1" disabled selected hidden>- - -</option>
                             <option name="department_id" value="BSCS">Bachelor of Science in Computer Science</option>
                             <option name="department_id" value="BSBM">Bachelor of Science in Business Management</option>
                             <option name="department_id" value="BSE">Bachelor of Science in Entrepreneurship</option>
                             <option name="department_id" value="BSIT">Bachelor of Science in Information Technology</option>
                             <option name="department_id" value="BSHRM">Bachelor of Science in Hotel and Restaurant Management</option>
                             <option name="department_id" value="BSOA">Bachelor of Science in Office Administration</option>
-                            <option name="department_id" value="BSSE">Bachelor of Science in Secondary Education</option>
+                            <option name="department_id" value="BSSE">Bachelor of Science in Secondary Education</option> --->
+                            <option value="g1" disabled selected hidden>- - -</option>
+                            <option name="department_id" value="1">Department of Biological and Physical Sciences</option>
+                            <option name="department_id" value="2">Department of Computer Studies</option>
+                            <option name="department_id" value="3">Department of Entrepreneurship</option>
+                            <option name="department_id" value="4">Department of Hospitality Management</option>
+                            <option name="department_id" value="5">Department of Languages and Mass Communication</option>
+                            <option name="department_id" value="6">Department of Management</option>
+                            <option name="department_id" value="7">Department of Social Science and Humanities</option>
+                            <option name="department_id" value="8">Physical Education Department</option>
+                            <option name="department_id" value="9">Teachers Education Department</option>
                         </select>
 
                       <label>No. of Books: </label>
@@ -78,7 +91,7 @@
                     <input id="b-add-img3" type="file" name="table_of_contents_location">
                   </div>
 
-                  <input type="submit" name="" value ="Add Book" id="b-submit">
+                  <input type="submit" name="submit" value ="Add Book" id="b-submit">
 
                   </div>
               </div>
