@@ -70,7 +70,7 @@
 
                   <!-- STUDENT CONTACT NUMBER(ARIS)-->
                   <div id="cont">
-                    <h3>Contact Number</h3>
+                    <h2>Contact Number</h2>
                     <input class="input-field" type = "text" id = "cnt" name = "student_contact" placeholder = "e.g., 09123456789" pattern=".{6,}" maxlength = "11" required title="6 characters minimum, 11 characters maximum">
                     <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
                   </div>
@@ -84,7 +84,7 @@
                     <!-- STUDENT COURSE(ARIS)-->
                     <div id="cs">
                       <h2>Course</h2>
-                        <select name="student_course" id="crs" required>
+                        <select class="input-field" name="student_course" id="crs" required>
                             <option value="g1" disabled selected hidden>- - -</option>
                             <option name="student_course" value="BSCS">Bachelor of Science in Computer Science</option>
                             <option name="student_course" value="BSBM">Bachelor of Science in Business Management</option>

@@ -56,7 +56,7 @@
                   </div>
                   <!-- END INSTRUCTOR NUMBER(ARIS)-->
 
-                  <!-- INSTRUCTOR GENDER(ARIS)-->
+                  <!-- STUDENT GENDER(ARIS)-->
                   <div id="gndr">
                     <h2 id="h2gnd">Gender</h2>
                         <select name="instructor_gender" id="gnd" required>
@@ -66,11 +66,11 @@
                             <option name="instructor_gender" value="Others">Others</option>
                         </select>
                   </div>
-                  <!-- END INSTRUCTOR GENDER(ARIS)-->
+                  <!-- END STUDENT GENDER(ARIS)-->
 
                   <!-- INSTRUCTOR CONTACT NUMBER(ARIS)-->
                   <div id="cont">
-                    <h3>Contact Number</h3>
+                    <h2>Contact Number</h2>
                     <input class="input-field" type = "text" id = "cnt" name = "instructor_contact" placeholder = "e.g., 09123456789" pattern=".{6,}" maxlength = "11" required title="6 characters minimum, 11 characters maximum">
                     <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
                   </div>
@@ -84,7 +84,7 @@
                     <!-- INSTRUCTOR COURSE(ARIS)-->
                     <div id="cs">
                       <h2>Department</h2>
-                        <select name="instructor_department" id="crs" required>
+                        <select class="input-field" name="instructor_department" id="crs" required>
                           <option value="g1" disabled selected hidden>- - -</option>
                           <option name="instructor_department" value="DBPS">Department of Biological and Physical Sciences</option>
                           <option name="instructor_department" value="DCS">Department of Computer Studies</option>
