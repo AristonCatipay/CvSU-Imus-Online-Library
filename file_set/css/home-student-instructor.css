@@ -11,6 +11,7 @@ body{
   background-position: center;
 }
 .nav-bar{
+  z-index: 99;
   right: 0;
   margin: 2% 0 0 1%;
   position: fixed;
@@ -18,7 +19,7 @@ body{
 .logo{
   float: left;
   display: inline;
-  /* width: 5%; */
+  width: 20%;
   margin: 1% 0 0 2%;
 }
 #logo-text1, #logo-text2{
@@ -64,9 +65,9 @@ body{
   font-weight: 400;
 }
 .dropbtn {
-  font-size: 25px;
   text-decoration: none;
   color: white;
+  font-size: 25px;
   font-family: 'Fashion Fetish', sans-serif;
 }
 .dropdown {
@@ -76,7 +77,7 @@ body{
 .dropdown-content {
   list-style: none;
   visibility: visible;
-  padding-left: 0;
+  padding: 25px 0;
   display: none;
   position: absolute;
   min-width: 160px;
@@ -88,7 +89,8 @@ body{
   color: white;
   text-decoration: none;
   display: block;
-  padding: 25px 0 0 0;
+  font-size: 20px;
+  padding-bottom: 30px;
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -107,7 +109,7 @@ body{
 #wt1, #wt2, #wt3{
   color: white;
   padding: 2% 0 0 0;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 #wt1{
   font-size: 250%;
@@ -156,12 +158,188 @@ body{
   box-shadow: inset 300px 0 0 0 white;
   color: black;
 }
+.account-header{
+  color: white;
+  top: 15%;
+  left: 10%;
+  position: absolute;
+  font-family: 'Fashion Fetish Light', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+/* ACCOUNT FAVORITES */
+.tabs-container{
+  top: 23%;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+}
+.tab {
+  overflow: hidden;
+}
+.tab button {
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 40px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  transition: 0.3s;
+  background-color: #2ebd2e;
+}
+.tablinks{
+  font-family: 'Fashion Fetish', sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.tab button:hover {
+  color: black;
+  background-color: #ddd;
+}
+.tab button.active {
+  color: black;
+  background-color: white;
+}
+.tabcontent {
+  display: none;
+  padding: 50px 25px;
+  background-color: white;
+}
 
-/*
-.modal-course, .modal-department {
+/* ACCOUNT SUGGESTIONS */
+.suggestion-container{
+  top: 23%;
+  left: 24.5%;
+  width: 50%;
+  position: absolute;
+  padding: 10px;
+  margin: 0;
+  background: white;
+  border: 5px solid #7ED957;
+}
+textarea{
+  resize: none;
+  outline: none;
+  width: 99.6%;
+  height: 475px;
+  margin-bottom: 20px;
+  border: 0;
+  font-size: 18px;
+}
+.word-submit p, .word-submit button{
+  display: inline;
+  float: right;
+  margin-right: 20px;
+}
+.word-submit p{
+  font-family: 'Fashion Fetish', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+.word-submit button{
+  font-family: 'Fashion Fetish', sans-serif;
+  font-size: 18px;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #7ED957;
+}
+
+/* ACCOUNT HISTORY */
+#s-history {
+  top: 30%;
+  left: 10%;
+  width: 80%;
+  text-align: left;
+  position: absolute;
+  background: white;
+  border: 18px solid white;
+  font-family: 'Fashion Fetish', sans-serif;
+  font-size: 18px;
+}
+#s-history td, #s-history th {
+  padding: 20px 0;
+  padding-left: 10px;
+}
+#s-history tr{
+  border-bottom: 1px solid black;
+}
+#s-history th{
+  font-weight: bold;
+  padding-bottom: 25px;
+  border-bottom: 3px solid black;
+}
+
+/* HOVER ON TABLE, ON IF NEEDED */
+/* #s-history tr:hover{
+  background-color: #ddd;
+} */
+
+
+/* ACCOUNT PROFILE */
+.profile-container{
+  top: 23%;
+  left: 25%;
+  width: 50%;
+  position: absolute;
+  background: white;
+  border: 5px solid #7ED957;
+  font-family: 'Fashion Fetish', sans-serif;
+  font-size: 18px;
+}
+.profile-header{
+  text-align: center;
+  background: #7ED957;
+  padding: 18px;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+.left, .right{
+  float: left;
+}
+.left{
+  width: 30%;
+}
+.right{
+  width: 70%;
+}
+.details-label{
+  float: right;
+  width: 70%;
+  height: 20px;
+  padding: 13px;
+  margin-bottom: 30px;
+  display: block;
+  border: 2px solid white;
+}
+.details{
+  width: 70%;
+  height: 20px;
+  padding: 13px;
+  margin-bottom: 30px;
+  margin-left: 15%;
+  border: 2px solid #7ED957;
+  border-radius: 5px;
+  background: #dedede;
+}
+.pass-change{
+  float: right;
+  margin-right: 10%;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+
+/* MODAL FOR CHANGING PASSWORD */
+.change-modal{
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   left: 0;
   top: 0;
   width: 100%;
@@ -170,54 +348,77 @@ body{
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.5);
 }
-.mc-content, .md-content {
-  background-color: #fefefe;
-  margin: 6% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 30px;
-  width: 60%;
-  height: auto;
-  text-align: center;
-}
-.md-content{
-  margin-top: 8%;
-}
-.mc-items, .md-items{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 40px 50px;
-  margin: 5% auto;
-}
-#mci, #mdi{
-  width: 250px;
-  height: 110px;
+.change-container{
+  top: 32%;
+  left: 30%;
+  width: 40%;
+  position: absolute;
+  background: white;
+  border: 5px solid #7ED957;
   font-family: 'Fashion Fetish', sans-serif;
   font-size: 18px;
-  cursor: pointer;
-  border: 3px solid green;
-  border-radius: 15px;
-  background-color: none;
-  color: black;
-  transition: ease-out 0.5s;
 }
-#mci:hover, #mdi:hover{
-  box-shadow: inset 300px 0 0 0 green;
-  color: white;
+.change-header{
+    text-align: center;
+    background: #7ED957;
+    padding: 18px;
+    font-size: 26px;
+    margin-bottom: 30px;
 }
-.close, .close2 {
-  color: #aaa;
+.change-left, .change-right{
+  float: left;
+}
+.change-left{
+  width: 35%;
+}
+.change-right{
+  width: 65%;
+}
+.change-details-label{
   float: right;
+  width: 80%;
+  height: 20px;
+  padding: 13px;
+  margin-bottom: 50px;
+  display: block;
+  border: 2px solid white;
+}
+.change-details{
+  width: 80%;
+  height: 20px;
+  padding: 13px;
+  margin-bottom: 50px;
+  border: 2px solid #7ED957;
+  border-radius: 5px;
+  background: #dedede;
+}
+.save-change{
+  float: right;
+  width: 13%;
+  height: 40px;
+  right: 10%;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: #7ED957;
+  position: relative;
+  font-family: 'Fashion Fetish', sans-serif;
+  font-size: 18px;
+}
+.save-change:hover{
+  background: #2ebd2e;
+}
+.close{
+  color: black;
+  float: right;
+  margin-right: 5px;
   font-size: 40px;
   font-weight: bold;
+  z-index: 99;
 }
-.close:hover, .close2:hover, .close:focus, .close2:focus {
+.close:hover, .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-.btn-header{
-  font-size: 30px;
-  font-family: 'Fashion Fetish', sans-serif;
-}
-*/

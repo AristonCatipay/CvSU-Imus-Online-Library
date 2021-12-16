@@ -40,8 +40,13 @@ body {
   width: 650px;
   height: auto;
 }
+<<<<<<< Updated upstream
 #h2gnd {
   margin-left: 25px;
+=======
+#h2gnd{
+  margin-left: 26px;
+>>>>>>> Stashed changes
 }
 h2 {
   margin-left: 45px;
@@ -71,7 +76,7 @@ h5 {
 #rl {
   width: 207px;
   height: 38px;
-  border: 2px solid green;
+  border: 2px solid #008037;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -83,14 +88,15 @@ h5 {
 #cnt {
   margin-bottom: 18px;
   height: 38px;
-  border: 2px solid green;
+  border: 2px solid #008037;
   border-radius: 5px;
 }
 #gnd,
 #crs {
   height: 50px;
-  border: 2px solid green;
+  border: 2px solid #008037;
   border-radius: 5px;
+<<<<<<< Updated upstream
 }
 #name,
 #email,
@@ -105,6 +111,19 @@ h5 {
 }
 #gndr,
 #cont {
+=======
+ }
+ #name, #email, #studnum, #crs, #password, #confirm_password{
+   width: 85%;
+ }
+ #crs{
+   width: 87.5%;
+ }
+ #gndr{
+   margin-left: 16px;
+ }
+#gndr, #cont{
+>>>>>>> Stashed changes
   width: 40%;
   float: left;
 }
@@ -165,6 +184,7 @@ h5 {
 #cnt:focus,
 #rl:focus {
   outline: none;
+<<<<<<< Updated upstream
   border: 2px solid #32cd32;
 }
 #gnd:focus,
@@ -176,6 +196,13 @@ h5 {
 #username:focus {
   outline: none;
   border: 2px solid #32cd32;
+=======
+  border: 2px solid #7ED957;
+}
+#gnd:focus,#crs:focus,#birthday:focus,#studnum:focus,#password:focus,#confirm_password:focus,#username:focus{
+  outline: none;
+  border: 2px solid #7ED957;
+>>>>>>> Stashed changes
 }
 /* #back, #btn{
   display: inline-block;
@@ -228,7 +255,7 @@ p.signup {
   font-size: 20px;
   letter-spacing: 2px;
   margin: 40px 200px 0 200px;
-  border: 2px solid green;
+  border: 2px solid #2ebd2e;
   border-radius: 50px;
   cursor: pointer;
   outline: none;
@@ -253,15 +280,20 @@ p.signup {
   letter-spacing: 2px;
   background-image: url("../css/pics/changerole.png");
   background-size: cover;
-  background-color: green;
-  border: 2px solid green;
+  background-color: #2ebd2e;
+  border: 2px solid #2ebd2e;
   border-radius: 50px;
   cursor: pointer;
   outline: none;
   text-decoration: none;
 }
+<<<<<<< Updated upstream
 #bt1:hover {
   box-shadow: inset 300px 0 0 0 green;
+=======
+#bt1:hover{
+  box-shadow: inset 300px 0 0 0 #2ebd2e;
+>>>>>>> Stashed changes
   color: white;
   text-decoration: none;
 }

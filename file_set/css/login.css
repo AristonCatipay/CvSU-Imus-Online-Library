@@ -74,15 +74,20 @@ h4{
   margin: 10px;
   width: 207px;
   height: 38px;
-  border: 2px solid green;
+  border: 2px solid #008037;
   border-radius: 5px;
   font-size: 16px;
   text-align: center;
 }
+#rl:focus{
+  border: 3px solid #7ED957;
+}
 #usr input[type = "text"],#psw input[type = "password"]{
   width: 500px;
   height: 60px;
-  border: 3px solid green;
+  font-size: 18px;
+  padding-left: 13px;
+  border: 3px solid #008037;
   margin-top: 15px;
   border-radius: 10px;
 }
@@ -92,11 +97,8 @@ h4{
 #usr input[type = "text"]:focus,#psw input[type = "password"]:focus{
   width: 510px;
   outline: none;
-  border: 3px solid #32CD32;
+  border: 3px solid #7ED957;
 }
-/* input[type="password"],input[type="text"], textarea {
-  background-color : #dfdfdf;
-} */
 .forgot{
   text-align: left;
   margin-left: 80px;
@@ -107,13 +109,12 @@ h4{
   font-weight: 300;
 }
 .pushable {
-  background: green;
+  background: #008037;
   border-radius: 12px;
   border: none;
   margin-top: 60px;
   padding: 0;
   cursor: pointer;
-  outline-offset: 4px;
 }
 .front {
   display: block;
@@ -122,7 +123,7 @@ h4{
   font-size: 26PX;
   font-family: 'Archivo', sans-serif;
   font-weight: 700;
-  background: #32CD32;
+  background: #2ebd2e;
   color: white;
   transform: translateY(-6px);
 }

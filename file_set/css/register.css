@@ -44,33 +44,40 @@ body{
 }
 .role-buttons{
   display: inline-block;
-  margin:  0;
-  padding: 0 50px 0 50px;
+  margin: 50px 0;
+  padding: 0 100px 0 100px;
 }
-.student, .instructor{
-  display: inline-block;
-}
-#st-rl, #ins-rl{
-  padding: 2px;
-  width: 350px;
-  height: 350px;
-  border-radius: 15px;
+#student, #instructor{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
   border: none;
   outline: none;
-  background-color: #48A14D;
-  box-shadow: 0 9px #999;
+  background-color: #008037;
+  cursor: pointer;
 }
-#st-rl{
+#student .front, #instructor .front{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: block;
+  background-color: #2ebd2e;
+  transform: translate(-5px,-16px);
+}
+#student .front{
   background-image: url("pics/stud.png");
   background-repeat: no-repeat;
-  background-size: 250px;
+  background-size: 150px;
   background-position: center;
 }
-#ins-rl{
+#instructor .front{
   background-image: url("pics/ins.png");
   background-repeat: no-repeat;
-  background-size: 250px;
+  background-size: 150px;
   background-position: center;
+}
+#student:active .front, #instructor:active .front {
+  transform: translate(-5px,-6px);
 }
 .role-label{
   display: block;
@@ -83,66 +90,17 @@ body{
 }
 h2{
   margin-left: 45px;
-}
-h2, h3{
   font-size: 19px;
   text-align: left;
   line-height: 0;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
-h4{
-  font-size: 16px;
-  line-height: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-}
-h5{
-  margin-top: 40px;
-  margin-bottom: 35px;
-  font-size: 36px;
-  line-height: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-}
-#subtn {
-  background: green;
-  border-radius: 12px;
-  border: none;
-  margin-top: 50px;
-  padding: 0;
-  cursor: pointer;
-  outline-offset: 4px;
-}
-#fr{
-  display: block;
-  padding: 12px 42px;
-  border-radius: 12px;
-  font-size: 22PX;
-  font-family: 'Archivo', sans-serif;
-  font-weight: 700;
-  background: #32CD32;
-  color: white;
-  transform: translateY(-6px);
-}
-#subtn:active #fr {
-  transform: translateY(-2px);
-}
 p.signin{
   text-align: center;
-  margin-top: 45px;
+  margin-top: 65px;
   font-size: 17px;
   font-style: italic;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-}
-::placeholder {
-   font-size: 16px;
-   opacity: 0.5;
-   font-family: 'Open Sans', sans-serif;
-   font-weight: 400;
-   text-indent: 10px;
-}
-.inv {
-    display: none;
 }

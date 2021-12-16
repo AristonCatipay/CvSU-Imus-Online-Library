@@ -3,7 +3,7 @@
   include_once '../../database/database_connection.php';
   include_once 'home-student-backend.php';
   include_once 'student-nav-bar.php';
-  $user_data = check_if_student_login($con) 
+  $user_data = check_if_student_login($con)
 ?>
       <div class="welcome-title">
 
@@ -11,10 +11,10 @@
           <p id="wt1">Welcome to</p>
           <p id="wt2">CvSU - IMUS CAMPUS</p>
           <p id="wt3"> ONLINE LIBRARY </p>
-          <?php
+          <!-- <?php
             $user_name = $user_data['student_name'];
             echo "<p class='user'>" .$user_name. "</p>";
-          ?>
+          ?> -->
         </div>
 
         <div class="wt-btns">

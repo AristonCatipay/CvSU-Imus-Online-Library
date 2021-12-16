@@ -35,7 +35,7 @@
                   <!-- NAME(ARIS)-->
                   <div id="nm">
                     <h2>Full Name</h2>
-                      <input class="input-field" type = "text" id = "name" name = "instructor_name" placeholder="Surname - First - Middle" pattern=".{6,}" maxlength = "75" required title="6 characters minimum, 75 characters maximum">
+                      <input class="input-field" type = "text" id = "name" name = "instructor_name" placeholder="First - Middle - Surname" pattern=".{6,}" maxlength = "75" required title="6 characters minimum, 75 characters maximum">
                       <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END NAME(ARIS)-->
@@ -70,7 +70,7 @@
 
                   <!-- INSTRUCTOR CONTACT NUMBER(ARIS)-->
                   <div id="cont">
-                    <h2>Contact Number</h2>
+                    <h3>Contact Number</h3>
                     <input class="input-field" type = "text" id = "cnt" name = "instructor_contact" placeholder = "e.g., 09123456789" pattern=".{6,}" maxlength = "11" required title="6 characters minimum, 11 characters maximum">
                     <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
                   </div>
