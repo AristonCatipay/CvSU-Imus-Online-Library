@@ -1,5 +1,5 @@
-@import url('http://fonts.cdnfonts.com/css/fashion-fetish');
-body{
+@import url("http://fonts.cdnfonts.com/css/fashion-fetish");
+body {
   width: 99%;
   height: auto;
   margin: 0;
@@ -10,23 +10,31 @@ body{
   background-attachment: fixed;
   background-position: center;
 }
-.nav-bar{
+.logo-navbar {
+  position: fixed;
+  top: 0;
+}
+.nav-bar {
   z-index: 99;
   right: 0;
   margin: 2% 0 0 1%;
   position: fixed;
 }
-.logo{
+.logo {
   float: left;
   display: inline;
   width: 20%;
   margin: 1.5% 0 0 2%;
 }
-#logo-text1, #logo-text2{
+#logo-text1,
+#logo-text2 {
   display: inline;
   position: relative;
 }
-.hm, .dropbtn, .crt, .acn{
+.hm,
+.dropbtn,
+.crt,
+.acn {
   margin-right: 20px;
   width: 150px;
   background: none;
@@ -36,7 +44,8 @@ body{
   border-bottom: none;
   padding: 0;
 }
-.cct, .lo{
+.cct,
+.lo {
   border: none;
   width: 40px;
   background: none;
@@ -44,31 +53,37 @@ body{
   border: 2px solid white;
   border-radius: 60%;
 }
-.cct{
+.cct {
   margin: 0 30px 0 20px;
 }
-.lo{
+.lo {
   margin-right: 50px;
 }
-.hm:hover, .dropbtn:hover, .crt:hover, .cct:hover, .acn:hover, .lo:hover, .dropdown-content a:hover{
+.hm:hover,
+.dropbtn:hover,
+.crt:hover,
+.cct:hover,
+.acn:hover,
+.lo:hover,
+.dropdown-content a:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-.nav-bar a{
+.nav-bar a {
   text-align: center;
   font-size: 25px;
   text-decoration: none;
   color: white;
-  font-family: 'Fashion Fetish', sans-serif;
+  font-family: "Fashion Fetish", sans-serif;
   font-weight: 400;
 }
 .dropbtn {
   text-decoration: none;
   color: white;
   font-size: 25px;
-  font-family: 'Fashion Fetish', sans-serif;
+  font-family: "Fashion Fetish", sans-serif;
 }
 .dropdown {
   position: relative;
@@ -82,9 +97,9 @@ body{
   position: absolute;
   min-width: 160px;
   z-index: 1;
-  font-family: 'Fashion Fetish', sans-serif;
+  font-family: "Fashion Fetish", sans-serif;
 }
-.dropdown-content a{
+.dropdown-content a {
   text-align: center;
   color: white;
   text-decoration: none;
@@ -93,9 +108,9 @@ body{
   padding-bottom: 40px;
 }
 .dropdown:hover .dropdown-content {
-    display: block;
-  }
-.welcome-title{
+  display: block;
+}
+.welcome-title {
   width: 70%;
   height: 50%;
   position: absolute;
@@ -106,45 +121,48 @@ body{
   right: 0;
   margin: auto;
 }
-#wt1, #wt2, #wt3{
+#wt1,
+#wt2,
+#wt3 {
   color: white;
   padding: 2% 0 0 0;
   margin-bottom: 70px;
 }
-#wt1{
+#wt1 {
   font-size: 250%;
   line-height: 0;
-  font-family: 'Fashion Fetish Light', sans-serif;
+  font-family: "Fashion Fetish Light", sans-serif;
 }
-#wt2{
+#wt2 {
   font-size: 450%;
   line-height: 0;
-  font-family: 'Fashion Fetish Heavy', sans-serif;
+  font-family: "Fashion Fetish Heavy", sans-serif;
 }
-#wt3{
+#wt3 {
   font-size: 370%;
   line-height: 0;
   letter-spacing: 30px;
-  font-family: 'Fashion Fetish', sans-serif;
+  font-family: "Fashion Fetish", sans-serif;
 }
-.user{
+.user {
   color: white;
-  font-family: 'Fashion Fetish Outline', sans-serif;
+  font-family: "Fashion Fetish Outline", sans-serif;
   font-size: 30px;
   padding-top: 30px;
   text-shadow: 3px 3px grey;
   text-decoration: overline;
 }
-.wt-btns a{
-    text-decoration: none;
+.wt-btns a {
+  text-decoration: none;
 }
-#bt1, #bt2{
+#bt1,
+#bt2 {
   display: inline;
   color: white;
   background: none;
   width: 22%;
   height: 70px;
-  font-family: 'Fashion Fetish', sans-serif;
+  font-family: "Fashion Fetish", sans-serif;
   font-size: 28px;
   letter-spacing: 5px;
   margin: 4% 5% 0 5%;
@@ -154,11 +172,13 @@ body{
   outline: none;
   transition: ease-out 0.5s;
 }
-#bt1:hover, #bt2:hover{
+#bt1:hover,
+#bt2:hover {
   box-shadow: inset 400px 0 0 0 white;
   color: black;
 }
-.add-books, .add-thesis{
+.add-books,
+.add-thesis {
   display: none;
   position: fixed;
   z-index: 99;
@@ -167,10 +187,11 @@ body{
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.a-b-container, .a-t-container{
+.a-b-container,
+.a-t-container {
   background-color: #fefefe;
   margin: 6% auto;
   padding: 20px;
@@ -180,7 +201,8 @@ body{
   height: 735px;
   text-align: center;
 }
-.a-b-items, .a-t-items{
+.a-b-items,
+.a-t-items {
   display: block;
   position: relative;
   width: 80%;
@@ -198,79 +220,88 @@ body{
   text-decoration: none;
   cursor: pointer;
 }
-.btn-header{
+.btn-header {
   font-size: 30px;
-  font-family: 'Fashion Fetish', sans-serif;
+  font-family: "Fashion Fetish", sans-serif;
   margin-bottom: 65px;
 }
-label{
+label {
   display: inline-block;
   text-align: right;
-  font-family: 'Fashion Fetish', sans-serif;
+  font-family: "Fashion Fetish", sans-serif;
   font-size: 20px;
 }
-.a-b-inputs, .a-t-inputs{
+.a-b-inputs,
+.a-t-inputs {
   margin-bottom: 35px;
   width: 100%;
 }
 
-
 /* books */
-#book-title, #book-isbn, #book-author, #department_id, #book-stocks{
+#book-title,
+#book-isbn,
+#book-author,
+#department_id,
+#book-stocks {
   height: 18px;
 }
-#book-title{
+#book-title {
   width: 85.6%;
 }
-#b-author, #b-isbn{
+#b-author,
+#b-isbn {
   display: inline-block;
 }
-#book-author{
+#book-author {
   width: 41%;
   margin-right: 50px;
 }
-#book-isbn{
+#book-isbn {
   width: 34%;
 }
-#department_id, #b-stocks{
+#department_id,
+#b-stocks {
   display: inline-block;
 }
-#department_id{
+#department_id {
   width: 38.8%;
   margin-right: 50px;
   height: 28px;
 }
-#book-stocks{
+#book-stocks {
   width: 5%;
 }
 
 /* thesis */
 
-#thesis-title, #thesis-owner, #t-course{
+#thesis-title,
+#thesis-owner,
+#t-course {
   height: 18px;
 }
-#thesis-title{
+#thesis-title {
   width: 84%;
 }
-#thesis-owner{
+#thesis-owner {
   width: 86.5%;
 }
-#t-course{
+#t-course {
   width: 73.8%;
   height: 28px;
 }
 
 .inp {
-    border:none;
-    border-bottom: 1px solid black;
-    padding-left: 10px;
-    outline: none;
-    font-family: 'Fashion Fetish', sans-serif;
- }
- input[type="file"] {
-    display: none;
+  border: none;
+  border-bottom: 1px solid black;
+  padding-left: 10px;
+  outline: none;
+  font-family: "Fashion Fetish", sans-serif;
 }
-.custom-file-upload, .custom-file-upload2 {
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload,
+.custom-file-upload2 {
   width: 25%;
   height: auto;
   margin: 20px;
@@ -282,27 +313,28 @@ label{
   color: #949494;
   transition: ease-out 0.5s;
 }
-.custom-file-upload2{
+.custom-file-upload2 {
   width: 40%;
 }
-.custom-file-upload:hover{
+.custom-file-upload:hover {
   box-shadow: inset 300px 0 0 0 #848484;
   color: white;
 }
-.custom-file-upload2:hover{
+.custom-file-upload2:hover {
   box-shadow: inset 450px 0 0 0 #848484;
   color: white;
 }
-i{
+i {
   margin-bottom: 15px;
 }
-#b-submit, #t-submit{
-  float:right;
+#b-submit,
+#t-submit {
+  float: right;
   color: black;
   background: none;
   width: 22%;
   height: 60px;
-  font-family: 'Fashion Fetish', sans-serif;
+  font-family: "Fashion Fetish", sans-serif;
   font-size: 20px;
   letter-spacing: 2px;
   margin: auto;
@@ -313,7 +345,8 @@ i{
   text-decoration: none;
   transition: ease-out 0.5s;
 }
-#b-submit:hover, #t-submit:hover{
+#b-submit:hover,
+#t-submit:hover {
   box-shadow: inset 300px 0 0 0 green;
   color: white;
   text-decoration: none;

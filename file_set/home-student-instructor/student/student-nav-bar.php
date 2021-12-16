@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/../cvsu-imus-online-library/file_set/css/home-student-instructor.css">
     <!-- <link rel="stylesheet" href="/../cvsu-imus-online-library/file_set/css/books.css"> -->
     <link rel="stylesheet" href="/../cvsu-imus-online-library/file_set/css/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="/../cvsu-imus-online-library/file_set/css/pics/favicon.png"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
@@ -33,6 +34,8 @@
                           <a href="/../cvsu-imus-online-library/file_set/home-student-instructor/student/nav-bar-links/student-account-profile.php" id="aprofile">Profile</a>
                       </div>
                   </div>
+                <button class="acn"><a href="#">Account</a></button>
+                <button class="acn"><a href="#"><img class="sgstn" src="/../cvsu-imus-online-library/file_set/css/pics/suggestion.png"></a></button>
                 <button class="cct"><a href="#">?</a></button>
                 <button class="lo"><a href="/../cvsu-imus-online-library/file_set/login/logout-backend.php">X</a></button>
         </div>
