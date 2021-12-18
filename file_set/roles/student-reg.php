@@ -51,7 +51,7 @@
                   <!-- STUDENT NUMBER(ARIS)-->
                   <div id="sn">
                     <h2>Student Number</h2>
-                      <input class="input-field" type = "text" id = "studnum" name = "student_number" placeholder = "e.g., 201910860" pattern=".{9,9}" required title="Must be 9 characters only">
+                      <input class="input-field" type = "number" id = "studnum" name = "student_number" placeholder = "e.g., 201910860" pattern=".{9,9}" required title="Must be 9 characters only">
                       <i id="emaillogo" class="fa fa-envelope fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END STUDENT NUMBER(ARIS)-->
@@ -71,7 +71,7 @@
                   <!-- STUDENT CONTACT NUMBER(ARIS)-->
                   <div id="cont">
                     <h3>Contact Number(+639)</h3>
-                    <input class="input-field" type = "text" id = "cnt" name = "student_contact" placeholder = "e.g., 123456789" pattern=".{9,9}" required>
+                    <input class="input-field" type = "number" id = "cnt" name = "student_contact" placeholder = "e.g., 123456789" pattern=".{9,9}" required>
                     <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END STUDENT CONTACT NUMBER(ARIS)-->

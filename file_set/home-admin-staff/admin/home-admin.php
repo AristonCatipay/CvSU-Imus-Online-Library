@@ -106,7 +106,7 @@
 
   <!-- ADD THESIS CONTAINER -->
 
-  <form action="#" method="post">
+  <form action="home-admin-buttons/admin-add-thesis-backend.php" method="post">
             <div class="add-thesis" id="add-t">
               <div class="a-t-container">
                 <span class="close2">&times;</span><p class="btn-header">Add Thesis:</p>
@@ -114,12 +114,12 @@
 
                       <div class="a-t-inputs" id="t-title">
                         <label>Thesis Title: </label>
-                        <input class="inp" type = "text" id = "thesis-title" name = "ThesisTitle" style="font-size:18px;">
+                        <input class="inp" type = "text" id = "thesis-title" name = "thesis_title" style="font-size:18px;">
                       </div>
 
                       <div class="a-t-inputs" id="t-wrapper1">
                           <label>Owner/s: </label>
-                          <input class="inp" type = "text" id = "thesis-owner" name = "ThesisOwner" style="font-size:18px;">
+                          <input class="inp" type = "text" id = "thesis-owner" name = "thesis_owner" style="font-size:18px;">
                       </div>
 
                     <div class="a-t-inputs" id="t-wrapper2">
@@ -141,12 +141,12 @@
                     <div class="a-t-inputs" id="t-img">
 
                       <label for="t-add-img1" class="custom-file-upload2">
-                          <i class="fa fa-file-image-o fa-3x" aria-hidden="true"></i><br>Add Image
+                          <i class="fa fa-file-image-o fa-3x" aria-hidden="true"></i><br>Add File
                       </label>
-                      <input id="t-add-img1" type="file">
+                      <input id="t-add-img1" name="t_file" type="file">
                     </div>
 
-                    <input type="submit" name="" value ="Add Thesis" id="t-submit">
+                    <input type="submit" value ="Add Thesis" id="t-submit">
 
                     </div>
                 </div>
