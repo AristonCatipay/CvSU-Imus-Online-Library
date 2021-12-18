@@ -20,6 +20,9 @@ body {
   margin: 2% 0 0 1%;
   position: fixed;
 }
+.nav-bar:hover{
+  color: white;
+}
 .logo {
   float: left;
   display: inline;
