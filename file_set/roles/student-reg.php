@@ -35,7 +35,7 @@
                   <!-- NAME(ARIS)-->
                   <div id="nm">
                     <h2>Full Name</h2>
-                      <input class="input-field" type = "text" id = "name" name = "student_name" placeholder="First - Middle - Surname" maxlength = "75" required>
+                      <input class="input-field" type = "text" id = "name" name = "student_name" placeholder="Surname - First - Middle" pattern=".{9,75}" required>
                       <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END NAME(ARIS)-->
@@ -43,7 +43,7 @@
                   <!-- EMAIL(ARIS)-->
                   <div id="eml">
                     <h2>CVSU Email</h2>
-                      <input class="input-field" type = "email" id = "email" name = "student_email" placeholder = "Email" maxlength = "75" required>
+                      <input class="input-field" type = "email" id = "email" name = "student_email" placeholder = "Email" pattern=".{,75}" required>
                       <i id="emaillogo" class="fa fa-envelope fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END EMAIL(ARIS)-->
@@ -51,7 +51,7 @@
                   <!-- STUDENT NUMBER(ARIS)-->
                   <div id="sn">
                     <h2>Student Number</h2>
-                      <input class="input-field" type = "text" id = "studnum" name = "student_number" placeholder = "e.g., 201910860" pattern="{9,9}" required title="Must be 9 characters only">
+                      <input class="input-field" type = "text" id = "studnum" name = "student_number" placeholder = "e.g., 201910860" pattern=".{9,9}" required title="Must be 9 characters only">
                       <i id="emaillogo" class="fa fa-envelope fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END STUDENT NUMBER(ARIS)-->
@@ -70,8 +70,8 @@
 
                   <!-- STUDENT CONTACT NUMBER(ARIS)-->
                   <div id="cont">
-                    <h3>Contact Number</h3>
-                    <input class="input-field" type = "text" id = "cnt" name = "student_contact" placeholder = "e.g., 09123456789" pattern="{11,11}" required>
+                    <h3>Contact Number(+639)</h3>
+                    <input class="input-field" type = "text" id = "cnt" name = "student_contact" placeholder = "e.g., 123456789" pattern="{9,9}" required>
                     <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END STUDENT CONTACT NUMBER(ARIS)-->
@@ -101,7 +101,7 @@
                     <!-- STUDENT PASSWORD(ARIS)-->
                     <div id="psw">
                       <h2>Password</h2>
-                      <input class="input-field" type = "password" id = "password" name = "student_password_1" placeholder = "Password" pattern="(?=.*\d).{8,}" required title="8 characters minimum and at least one number">
+                      <input class="input-field" type = "password" id = "password" name = "student_password_1" placeholder = "Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,31}" required title="that must contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter">
                       <i id="passlogo" class="fa fa-lock fa-lg" aria-hidden="true"></i>
                       <span toggle="#password-field" class="fa fa-fw fa-eye-slash fa-lg field_icon toggle-password"></span>
                     </div>
@@ -110,7 +110,7 @@
                     <!-- STUDENT PASSWORD CONFIRMATION(ARIS)-->
                     <div id="cpsw">
                       <h2>Confirm Password</h2>
-                        <input class="input-field" type = "password" id = "confirm_password" name = "student_password_2" placeholder = "Confirm Password" pattern="(?=.*\d).{8,}" required>
+                        <input class="input-field" type = "password" id = "confirm_password" name = "student_password_2" placeholder = "Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,31}" required title="that must contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter">
                         <i id="confpasslogo" class="fa fa-lock fa-lg" aria-hidden="true"></i>
                     </div>
                     <!-- END STUDENT PASSWORD CONFIRMATION(ARIS)-->

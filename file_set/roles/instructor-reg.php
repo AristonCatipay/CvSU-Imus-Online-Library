@@ -35,7 +35,7 @@
                   <!-- NAME(ARIS)-->
                   <div id="nm">
                     <h2>Full Name</h2>
-                      <input class="input-field" type = "text" id = "name" name = "instructor_name" placeholder="First - Middle - Surname" pattern=".{6,}" maxlength = "75" required title="6 characters minimum, 75 characters maximum">
+                      <input class="input-field" type = "text" id = "name" name = "instructor_name" placeholder="Surname - First - Middle" maxlength = "75" minlength = "9" required title="6 characters minimum, 75 characters maximum">
                       <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END NAME(ARIS)-->
@@ -51,7 +51,7 @@
                   <!-- INSTRUCTOR NUMBER(ARIS)-->
                   <div id="sn">
                     <h2>Instructor Number</h2>
-                      <input class="input-field" type = "text" id = "instnum" name = "instructor_number" placeholder = "e.g., 201910860" maxlength = "20" required>
+                      <input class="input-field" type = "text" id = "instnum" name = "instructor_number" placeholder = "e.g., 201910860" pattern=".{9,9}" required title="Must be 9 characters only">
                       <i id="emaillogo" class="fa fa-envelope fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END INSTRUCTOR NUMBER(ARIS)-->
@@ -70,8 +70,8 @@
 
                   <!-- INSTRUCTOR CONTACT NUMBER(ARIS)-->
                   <div id="cont">
-                    <h3>Contact Number</h3>
-                    <input class="input-field" type = "text" id = "cnt" name = "instructor_contact" placeholder = "e.g., 09123456789" pattern=".{6,}" maxlength = "11" required title="6 characters minimum, 11 characters maximum">
+                    <h3>Contact Number(+639)</h3>
+                    <input class="input-field" type = "text" id = "cnt" name = "instructor_contact" placeholder = "e.g., 123456789" pattern="{9,9}" required>
                     <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END INSTRUCTOR CONTACT NUMBER(ARIS)-->
@@ -103,7 +103,7 @@
                     <!-- INSTRUCTOR PASSWORD(ARIS)-->
                     <div id="psw">
                       <h2>Password</h2>
-                      <input class="input-field" type = "password" id = "password" name = "instructor_password_1" placeholder = "Password" pattern=".{8,}" required title="8 characters minimum, 75 characters maximum">
+                      <input class="input-field" type = "password" id = "password" name = "instructor_password_1" placeholder = "Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,31}" required title="that must contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter">
                       <i id="passlogo" class="fa fa-lock fa-lg" aria-hidden="true"></i>
                       <span toggle="#password-field" class="fa fa-fw fa-eye-slash fa-lg field_icon toggle-password"></span>
                     </div>
@@ -112,7 +112,7 @@
                     <!-- INSTRUCTOR PASSWORD CONFIRMATION(ARIS)-->
                     <div id="cpsw">
                       <h2>Confirm Password</h2>
-                        <input class="input-field" type = "password" id = "confirm_password" name = "instructor_password_2" placeholder = "Confirm Password" pattern=".{8,}" required title="8 characters minimum, 75 characters maximum">
+                        <input class="input-field" type = "password" id = "confirm_password" name = "instructor_password_2" placeholder = "Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,31}" required title="that must contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter">
                         <i id="confpasslogo" class="fa fa-lock fa-lg" aria-hidden="true"></i>
                     </div>
                     <!-- END INSTRUCTOR PASSWORD CONFIRMATION(ARIS)-->
