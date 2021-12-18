@@ -11,10 +11,10 @@
           <p id="wt1">Welcome to</p>
           <p id="wt2">CvSU - IMUS CAMPUS</p>
           <p id="wt3"> ONLINE LIBRARY </p>
-          <!-- <?php
+          <?php
             $user_name = $user_data['student_name'];
             echo "<p class='user'>" .$user_name. "</p>";
-          ?> -->
+          ?>
         </div>
 
         <div class="wt-btns">
