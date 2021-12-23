@@ -2,7 +2,7 @@
 include '../../../database/database_connection.php';
 include '../../reusable_function/functions.php';
 
-if (isset($_POST["submit"])){
+if (isset($_POST["submit_book"])){
     $department_id = $_POST["department_id"];
     $book_title = $_POST["book_title"];
     $title_photo_location = $_FILES["title_photo_location"];
@@ -35,6 +35,38 @@ if (isset($_POST["submit"])){
 
     $allowedExtension = array('jpg', 'jpeg', 'png');
 
+    if ($department_id === '0'){
+
+        if (check_file_extension($titlePhotoExt,$allowedExtension) && check_file_extension($overviewPhotoExt,$allowedExtension) && check_file_extension($tableOfContentsPhotoExt,$allowedExtension)){
+            if (check_upload_error($titlePhotoError) && check_upload_error($overviewPhotoError) && check_upload_error($tableOfContentsPhotoError)){
+                if(check_file_size($titlePhotoSize) && check_file_size($overviewPhotoSize) && check_file_size($tableOfContentsPhotoSize)){
+                    $location = '../../../book-images/DDS/';
+                    $titlePhotoRenamed = rename_file($titlePhotoExt);
+                    $overviewPhotoRenamed = rename_file($overviewPhotoExt);
+                    $tableOfContentsPhotoRenamed = rename_file($tableOfContentsPhotoExt);
+
+                    $titlePhotoUploadDestination = file_Destination($location,$titlePhotoRenamed);
+                    $overviewPhotoUploadDestination = file_Destination($location,$overviewPhotoRenamed);
+                    $tableOfContentsPhotoUploadDestination = file_Destination($location,$tableOfContentsPhotoRenamed);
+
+                    $queryResult = sql_query($con, $department_id, $book_title, $titlePhotoUploadDestination, $overviewPhotoUploadDestination, $tableOfContentsPhotoUploadDestination,
+                $ISBN_number,$author, $date_published,$number_of_stocks);
+
+                    move_uploaded_file($titlePhotoTmpName, $titlePhotoUploadDestination);
+                    move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
+                    move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
+                    
+                    header('Location: ../home-admin.php?uploadsuccessful');
+                } else {
+                    echo "File/s too Big!";
+                }
+            } else {
+                echo "Error/s! Failed!";
+            }
+        } else {
+            echo "Incorrect File/s Extension!";
+        }
+    }
     if ($department_id === '1'){
 
         if (check_file_extension($titlePhotoExt,$allowedExtension) && check_file_extension($overviewPhotoExt,$allowedExtension) && check_file_extension($tableOfContentsPhotoExt,$allowedExtension)){

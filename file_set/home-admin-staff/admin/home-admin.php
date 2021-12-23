@@ -62,6 +62,7 @@
                             <option name="department_id" value="BSOA">Bachelor of Science in Office Administration</option>
                             <option name="department_id" value="BSSE">Bachelor of Science in Secondary Education</option> --->
                             <option value="g1" disabled selected hidden>- - -</option>
+                            <option name="department_id" value="0">Department of Development Studies</option>
                             <option name="department_id" value="1">Department of Biological and Physical Sciences</option>
                             <option name="department_id" value="2">Department of Computer Studies</option>
                             <option name="department_id" value="3">Department of Entrepreneurship</option>
@@ -72,7 +73,6 @@
                             <option name="department_id" value="8">Physical Education Department</option>
                             <option name="department_id" value="9">Teachers Education Department</option>
                         </select>
-
                       <label>No. of Books: </label>
                       <input class="inp" type = "text" id = "book-stocks" name = "number_of_stocks" style="font-size:18px;">
                   </div>
@@ -95,7 +95,7 @@
                     <input id="b-add-img3" type="file" name="table_of_contents_location">
                   </div>
 
-                  <input type="submit" name="submit" value ="Add Book" id="b-submit">
+                  <input type="submit" name="submit_book" value ="Add Book" id="b-submit">
 
                   </div>
               </div>
@@ -106,7 +106,7 @@
 
   <!-- ADD THESIS CONTAINER -->
 
-  <form action="home-admin-buttons/admin-add-thesis-backend.php" method="post">
+  <form action="home-admin-buttons/admin-add-thesis-backend.php" method="post" enctype="multipart/form-data">
             <div class="add-thesis" id="add-t">
               <div class="a-t-container">
                 <span class="close2">&times;</span><p class="btn-header">Add Thesis:</p>
@@ -122,19 +122,33 @@
                           <input class="inp" type = "text" id = "thesis-owner" name = "thesis_owner" style="font-size:18px;">
                       </div>
 
+                      <div class="a-t-inputs" id="t-wrapper1">
+                          <label>Date Published: </label>
+                          <input class="inp" type = "date" id = "date-published" name="date_published" style="font-size:18px;">
+                      </div>
+
                     <div class="a-t-inputs" id="t-wrapper2">
                         <label>Designated Course: </label>
-                            <select class="inp" name="t-course" id="t-course" required style="font-size:18px;">
-                              <option value="g1" disabled selected hidden>- - -</option>
-                              <option name="t-course" value="DBPS">Department of Biological and Physical Sciences</option>
-                              <option name="t-course" value="DCS">Department of Computer Studies</option>
-                              <option name="t-course" value="DE">Department of Entrepreneurship</option>
-                              <option name="t-course" value="DHM">Department of Hospitality Management</option>
-                              <option name="t-course" value="DLMC">Department of Languages and Mass Communication</option>
-                              <option name="t-course" value="DM">Department of Management</option>
-                              <option name="t-course" value="DSSH">Department of Social Science and Humanities</option>
-                              <option name="t-course" value="PED">Physical Education Department</option>
-                              <option name="t-course" value="TED">Teachers Education Department</option>
+                          <select class="inp" name="t-course" id="t-course" required style="font-size:18px;">
+                            <option value="g1" disabled selected hidden>- - -</option>
+                            <option name="t-course" value="1">Bachelor of Science in Computer Science</option>
+                            <option name="t-course" value="2">Bachelor of Science in Information Technology</option>
+                            <option name="t-course" value="3">Bachelor of Arts in Journalism</option>
+                            <option name="t-course" value="4">Bachelor of Early Childhood Education</option>
+                            <option name="t-course" value="5">Bachelor of Elementary Education</option>
+                            <option name="t-course" value="6">Bachelor of Science in Business Management</option>
+                            <option name="t-course" value="7">Bachelor of Science in Entrepreneurship</option>
+                            <option name="t-course" value="8">Bachelor of Science in Hospitality Management</option>
+                            <option name="t-course" value="9">Bachelor of Science in Office Administration</option>
+                            <option name="t-course" value="10">Bachelor of Science in Psychology</option>
+                            <option name="t-course" value="11 ">Bachelor of Secondary Education</option>
+                            <option name="t-course" value="12">Bachelor of Secondary Education Major in English</option>
+                            <option name="t-course" value="13">Bachelor of Secondary Education Major in Mathematics</option>
+                            <option name="t-course" value="14">Teacher Certificate Program</option>
+                            <option name="t-course" value="15">Master in Professional Studies</option>
+                            <option name="t-course" value="16">Master of Arts in Education</option>
+                            <option name="t-course" value="17">Master of Business Administration</option>
+                            
                           </select>
                     </div>
 
@@ -146,7 +160,7 @@
                       <input id="t-add-img1" name="t_file" type="file">
                     </div>
 
-                    <input type="submit" value ="Add Thesis" id="t-submit">
+                    <input type="submit" name="submit_thesis" value ="Add Thesis" id="t-submit">
 
                     </div>
                 </div>
