@@ -19,7 +19,7 @@
 
         <div class="wt-btns">
           <a href="/../cvsu-imus-online-library/file_set/home-student-instructor/student/nav-bar-links/student-books.php"><button id="bt1">Books</button></a>
-          <a href="#"><button id="bt2">Thesis</button></a>
+          <a href="/../cvsu-imus-online-library/file_set/home-student-instructor/student/nav-bar-links/student-thesis.php"><button id="bt2">Thesis</button></a>
         </div>
       </div>
   </body>

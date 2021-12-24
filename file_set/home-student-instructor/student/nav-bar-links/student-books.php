@@ -31,9 +31,11 @@ session_start();
                                     <li class="list-group-item">Author: <?php echo $author  ?></li>
                                     <li class="list-group-item">Date Published: <?php echo $date_published  ?></li>
                                     <li class="list-group-item">Stocks: <?php echo $number_of_stocks  ?></li>
+                                    <li class="list-group-item">Rate: <?php echo $book_rate  ?></li>
                                 </ul>
                                 <div class="card-body">
                                     <button class="btn btn-borrow">Borrow</button>
+                                    <button class="btn btn-borrow">Rate</button>
                                 </div>
                             </div>
                         </div>

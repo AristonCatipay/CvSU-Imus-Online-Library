@@ -13,18 +13,22 @@ session_start();
 
 
 <!-- FORM -->
+  <form method="post" action="student-account-suggestion-backend.php">
     <div class="suggestion-container">
-
-      <div class="textarea">
-        <textarea id="word" oninput="countWord()"></textarea>
+      <div class="book-title">
+          <label>Book Title: </label>
+          <input class="inp" type="text" id="book-title" name="book_name" style="font-size:18px;">
       </div>
-
-          <div class="word-submit">
-            <button class="suggestion-submit">Submit</button>
-            <p>Word Count: <span id="show">0 </span> / 100</p>
-          </div>
-
+      <div class="textarea">
+        <label style="font-family:Fashion Fetish;font-size:15px;">Why do you like this book?</label>
+        <textarea id="word" name="comment" oninput="countWord()"></textarea>
+      </div>
+      <div class="word-submit">
+        <button class="suggestion-submit" name="submit_suggestion">Submit</button>
+        <p>Word Count: <span id="show">0 </span> / 100</p>
+      </div>
     </div>
+  </form>
 
     <!-- FORM END -->
 
