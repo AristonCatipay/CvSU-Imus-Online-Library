@@ -28,11 +28,11 @@ session_start();
       </div>
 
       <div class="right">
-        <div class="details"><p><?php echo $student_name?></p></div>
-        <div class="details"><p><?php echo $student_number?></p></div>
-        <div class="details"><p><?php echo $student_course?></p></div>
-        <div class="details"><p><?php echo $student_email?></p></div>
-        <div class="details"><p><?php echo $student_contact?></p></div>
+        <div class="details"><p style="font-size: 15px; margin:-11px; margin-left:10px;"><?php echo $student_name?></p></div>
+        <div class="details"><p style="font-size: 15px; margin:-11px; margin-left:10px;"><?php echo $student_number?></p></div>
+        <div class="details"><p style="font-size: 15px; margin:-11px; margin-left:10px;"><?php echo $student_course?></p></div>
+        <div class="details"><p style="font-size: 13px; margin:-9px; margin-left:10px;"><?php echo $student_email?></p></div>
+        <div class="details"><p style="font-size: 15px; margin:-11px; margin-left:10px;">+63<?php echo $student_contact?></p></div>
         <div class="pass-change"><a href="#" id="change-pass">Change Password?</a></div>
       </div>
     </div>
