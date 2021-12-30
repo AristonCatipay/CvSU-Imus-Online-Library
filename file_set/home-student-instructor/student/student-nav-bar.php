@@ -12,7 +12,9 @@
     </head>
 
   <body>
+    
     <div class="logo-navbar">
+      <nav>
       <a href ="/../cvsu-imus-online-library/file_set/home-student-instructor/student/home-student.php"><img class="logo" src="/../cvsu-imus-online-library/file_set/css/pics/logo-text.png"></a>
 
       <div class="nav-bar">
@@ -38,4 +40,20 @@
                 <button class="lo"><a href="/../cvsu-imus-online-library/file_set/login/logout-backend.php">X</a></button>
         </div>
         <br>
+      </nav>
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+
+            $(window).scroll(function(){
+                if($(window).scrollTop()){
+                    $("nav").addClass("black");
+                }
+                else{
+                    $("nav").removeClass("black");
+                }
+            });
+    </script>
+  

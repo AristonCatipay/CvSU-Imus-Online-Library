@@ -10,9 +10,16 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
+
 .logo-navbar {
   position: fixed;
   top: 0;
+}
+nav.black {
+  background: rgb(134, 129, 102);
+  height: 105px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .nav-bar {
   z-index: 99;
