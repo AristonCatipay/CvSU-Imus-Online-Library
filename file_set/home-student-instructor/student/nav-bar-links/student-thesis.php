@@ -20,9 +20,8 @@ session_start();
                         ?>
                         <div class="col-md-4">
                             <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="<?php echo $thesis_file?>" alt="Card image cap" width="400px" height="400px">
                                     <div class="card-body">
-                                        <h5 class="card-title">Book Title:<?php echo $thesis_title?></h5>
+                                        <h5 class="card-title">Thesis Title: <?php echo $thesis_title?></h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
                                     </div>
                                 <ul class="list-group list-group-flush" style="list-style:none">
@@ -31,7 +30,10 @@ session_start();
                                     <li class="list-group-item">Rate: <?php echo $thesis_rate  ?></li>
                                 </ul>
                                 <div class="card-body">
-                                    <button class="btn btn-borrow">Borrow</button>
+                                <form action="student-view-thesis-btn-backend.php" method="post">
+                                    <input type="hidden" name="thesis_file" value="<?php echo $thesis_file?>">
+                                    <button class="btn btn-borrow" name="view_thesis">View</button>
+                                </form>
                                     <button class="btn btn-borrow">Rate</button>
                                 </div>
                             </div>

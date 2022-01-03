@@ -38,7 +38,7 @@
                   </div>
                 <button class="cct"><a href="#">?</a></button>
                 <button class="lo"><a href="/../cvsu-imus-online-library/file_set/login/logout-backend.php">X</a></button>
-        </div>
+      </div>
         <br>
       </nav>
     </div>
@@ -55,5 +55,4 @@
                     $("nav").removeClass("black");
                 }
             });
-    </script>
-  
+    </script> 
