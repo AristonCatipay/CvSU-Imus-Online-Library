@@ -17,23 +17,33 @@ session_start();
         <th style="width:20%">Date Borrowed</th>
         <th style="width:20%">Return Schedule</th>
         <th style="width:20%">Date Returned</th>
-        <th style="width:8%">Penalty</th>
+        <th style="width:8%">Type</th>
       </tr>
-      <tr>
-        <td>Myth</td>
-        <td>Amelia Watson</td>
-        <td>Detective</td>
-        <td>Salty</td>
-        <td>13/10</td>
-      </tr>
-      <tr>
-        <td>HoloX</td>
-        <td>Sakamata Chloe</td>
-        <td>Intern</td>
-        <td>Orca</td>
-        <td>10/10</td>
-      </tr>
+      <?php
+        $query = "SELECT br.*, b.book_title
+        FROM borrow_request_student br, book b
+        WHERE br.book_id=b.book_id;
+        ";
+        $result = mysqli_query($con,$query);
+        while ($data = mysqli_fetch_array($result)){
+          $book_title = $data["book_title"];
+          $transaction_date  = $data["transaction_date"];
+          $pickup_date = $data["pickup_date"];
+          $request_type = $data["request_status"];
+          $return_due_date = $data["return_due_date"];
+          $return_date = $data["return_date"];
+          $student_number = $data["student_number"];
+      ?>
+          <tr>
+            <td><?php echo $book_title?></td>
+            <td><?php echo $transaction_date?></td>
+            <td><?php echo $return_due_date?></td>
+            <td><?php echo $return_date?></td>
+            <td><?php echo $request_type?></td>
+          </tr>
     </table>
-
+      <?php
+        }
+    ?>
 </body>
 </html>
