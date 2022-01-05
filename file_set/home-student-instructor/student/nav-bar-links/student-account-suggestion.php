@@ -17,10 +17,10 @@ session_start();
     <div class="suggestion-container">
       <div class="book-title">
           <label style="margin-top:10px;">Book Title: </label>
-          <input class="inp" type="text" id="book-title" name="book_name" style="font-size:15px; border-radius: 15px; text-align: center;">
+          <input class="inp" type="text" id="book-title" name="book_name" style="font-size:15px; border-radius: 15px; text-align: center;"><br>
+          <label style="font-family:Fashion Fetish;font-size:15px; margin-top:10px;">Why do you like this book?</label>
       </div>
       <div class="textarea">
-        <label style="font-family:Fashion Fetish;font-size:15px; margin-top:10px;">Why do you like this book?</label>
         <textarea id="word" name="comment" oninput="countWord()" style="font-size:18px; text-align: center; margin-top: 35px;"></textarea>
       </div>
       <div class="word-submit">

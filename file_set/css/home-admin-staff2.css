@@ -1,0 +1,67 @@
+.account-header {
+  color: white;
+  top: 15%;
+  left: 10%;
+  position: absolute;
+  font-family: "Fashion Fetish Light", sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+/* RECORDS STUDENTS */
+#records {
+  top: 23%;
+  left: 10%;
+  width: 80%;
+  text-align: left;
+  position: absolute;
+  background: white;
+  border: 18px solid white;
+  font-family: "Fashion Fetish", sans-serif;
+  font-size: 18px;
+}
+#records td,
+#records th {
+  padding: 20px 0;
+  padding-left: 10px;
+}
+#records td{
+  line-height: 1.6;
+}
+#records tr {
+  border-bottom: 1px solid black;
+}
+#records th {
+  font-weight: bold;
+  padding-bottom: 25px;
+  border-bottom: 3px solid black;
+}
+
+/* TRANSACTIONS */
+#trans{
+  top: 23%;
+  left: 7.5%;
+  width: 85%;
+  text-align: left;
+  position: absolute;
+  background: white;
+  border: 18px solid white;
+  font-family: "Fashion Fetish", sans-serif;
+  font-size: 18px;
+}
+#trans td,
+#trans th {
+  padding: 20px 0;
+  padding-left: 10px;
+}
+#trans td{
+  line-height: 1.6;
+}
+#trans tr {
+  border-bottom: 1px solid black;
+}
+#trans th {
+  font-weight: bold;
+  padding-bottom: 25px;
+  border-bottom: 3px solid black;
+}

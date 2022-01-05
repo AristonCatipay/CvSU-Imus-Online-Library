@@ -10,18 +10,19 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
-
-.logo-navbar {
+nav{
+  z-index: 99;
+  width: 100%;
+  height: 110px;
   position: fixed;
   top: 0;
 }
 nav.black {
   background: rgb(57, 158, 54);
-  height: 100px;
-
+  height: 110px;
+  transition: ease-out 0.3s;
 }
 .nav-bar {
-  z-index: 99;
   right: 0;
   margin: 2% 0 0 1%;
   position: fixed;
@@ -30,7 +31,7 @@ nav.black {
   float: left;
   display: inline;
   width: 20%;
-  margin: 1% 0 0 2%;
+  margin: 20px 0 0 25px;
 }
 .sgstn {
   display: inline;
@@ -55,20 +56,21 @@ nav.black {
   border-bottom: none;
   padding: 0;
 }
-.cct,
-.lo {
-  border: none;
+.cct {
   width: 40px;
   background: none;
   padding: 0;
   border: 2px solid white;
   border-radius: 60%;
-}
-.cct {
   margin: 0 30px 0 20px;
+
 }
 .lo {
-  margin-right: 50px;
+  border: none;
+  width: 40px;
+  background: none;
+  padding: 0;
+  margin-right: 30px;
 }
 .hm:hover,
 .dropbtn:hover,
@@ -104,26 +106,35 @@ nav.black {
   display: inline-block;
 }
 .dropdown-content {
+  color: black;
   list-style: none;
   visibility: visible;
-  padding: 25px 0;
   display: none;
   position: absolute;
   min-width: 160px;
+  margin-top: 10px;
   z-index: 1;
+  background: white;
+  border-radius: 5px;
   font-family: "Fashion Fetish", sans-serif;
 }
 .dropdown-content a {
   text-align: center;
-  color: white;
+  color: black;
   text-decoration: none;
   display: block;
   font-size: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
-.dropdown:hover .dropdown-content {
+.dropdown-content a:hover{
+  color: black;
+}
+.show{
   display: block;
-  color: white;
+}
+.show2{
+  display: block;
 }
 .welcome-title {
   width: 70%;
@@ -290,7 +301,7 @@ textarea{
 
 /* ACCOUNT HISTORY */
 #s-history {
-  top: 30%;
+  top: 23%;
   left: 10%;
   width: 80%;
   text-align: left;
@@ -337,34 +348,33 @@ textarea{
   font-size: 26px;
   margin-bottom: 25px;
 }
-.left,
-.right {
+.left, .right {
   float: left;
 }
 .left {
   width: 30%;
 }
-.right {
-  width: 70%;
-}
 .details-label {
   float: right;
-  width: 70%;
-  height: 20px;
+  width: 80%;
+  height: 50px;
   padding: 13px;
   margin-bottom: 30px;
   display: block;
   border: 2px solid white;
 }
+.right {
+  width: 70%;
+}
 .details {
   width: 70%;
-  height: 20px;
+  height: 50px;
   padding: 13px;
   margin-bottom: 30px;
   margin-left: 15%;
   border: 2px solid #7ed957;
   border-radius: 5px;
-  background: #dedede;
+  background: #ececec;
 }
 .pass-change {
   float: right;
@@ -404,28 +414,27 @@ textarea{
   font-size: 26px;
   margin-bottom: 30px;
 }
-.change-left,
-.change-right {
+.change-left, .change-right {
   float: left;
 }
 .change-left {
   width: 35%;
 }
-.change-right {
-  width: 65%;
-}
 .change-details-label {
   float: right;
   width: 80%;
-  height: 20px;
+  height: 50px;
   padding: 13px;
   margin-bottom: 50px;
   display: block;
   border: 2px solid white;
 }
+.change-right {
+  width: 65%;
+}
 .change-details {
   width: 80%;
-  height: 20px;
+  height: 50px;
   padding: 13px;
   margin-bottom: 50px;
   border: 2px solid #7ed957;

@@ -1,7 +1,22 @@
 <?php
 session_start();
-    include '../../admin/admin-nav-bar.php';
-    include '../../admin/home-admin-backend.php';
-    include '../../../database/database_connection.php';
-    $user_data = check_if_admin_login($con); 
-?> 
+    include '../admin-nav-bar.php';
+?>
+<body>
+
+  <div class="account-header">
+    <h2>TRANSACTIONS / RETURNED BOOKS</h2>
+  </div>
+
+  <table id="trans">
+    <tr>
+      <th style="width:25%">Name/Course & Section</th>
+      <th style="width:25%">Book Title</th>
+      <th style="width:20%">Return Schedule</th>
+      <th style="width:20%">Date Returned</th>
+      <th style="width:10%">Penalty</th>
+    </tr>
+  </table>
+
+</body>
+</html>

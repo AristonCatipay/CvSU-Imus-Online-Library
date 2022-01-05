@@ -1,15 +1,7 @@
 <?php
 session_start();
-    include '../student-nav-bar.php';
-    include '../home-student-backend.php';
+    include '../instructor-nav-bar.php';
     include '../../../database/database_connection.php';
-    $user_data = check_if_student_login($con);
-    $student_name = $user_data["student_name"];
-    $student_number = $user_data["student_number"];
-    $student_course = $user_data["student_course"];
-    $student_email = $user_data["student_email"];
-    $student_contact = $user_data["student_contact"];
-    $student_password = $user_data["student_password"];
 ?>
 <body>
     <div class="account-header">
@@ -21,18 +13,18 @@ session_start();
 
       <div class="left">
         <div class="details-label"><label>Full Name:</label></div>
-        <div class="details-label"><label>Student Number:</label></div>
-        <div class="details-label"><label>Course:</label></div>
+        <div class="details-label"><label>Instructor Number:</label></div>
+        <div class="details-label"><label>Department:</label></div>
         <div class="details-label"><label>CVSU Email:</label></div>
         <div class="details-label"><label>Contact Number:</label></div>
       </div>
 
       <div class="right">
-        <div class="details"><p style="font-size: 15px; margin-left:10px;"><?php echo $student_name?></p></div>
-        <div class="details"><p style="font-size: 15px; margin-left:10px;"><?php echo $student_number?></p></div>
-        <div class="details"><p style="font-size: 15px; margin-left:10px;"><?php echo $student_course?></p></div>
-        <div class="details"><p style="font-size: 13px; margin-left:10px;"><?php echo $student_email?></p></div>
-        <div class="details"><p style="font-size: 15px; margin-left:10px;">+63<?php echo $student_contact?></p></div>
+        <div class="details"><p style="font-size: 15px; margin-left:10px;"></p></div>
+        <div class="details"><p style="font-size: 15px; margin-left:10px;"></p></div>
+        <div class="details"><p style="font-size: 15px; margin-left:10px;"></p></div>
+        <div class="details"><p style="font-size: 13px; margin-left:10px;"></p></div>
+        <div class="details"><p style="font-size: 15px; margin-left:10px;">+63</p></div>
         <div class="pass-change"><a href="#" id="change-pass">Change Password?</a></div>
       </div>
     </div>

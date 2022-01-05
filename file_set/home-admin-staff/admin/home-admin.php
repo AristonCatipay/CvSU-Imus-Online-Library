@@ -36,12 +36,8 @@
 
                     <div class="a-b-inputs" id="b-title">
                       <label>Book Title: </label>
-                      <input class="inp" type = "text" id = "book-title" name = "book_title" style="font-size:18px;">
-
-                      <label><br>Date Published: </label>
-                      <input class="inp" type = "date" id = "book-title" name = "date_published" style="font-size:18px;">
+                      <input class="inp" type = "text" id = "book-title" name = "book_title" style="font-size:18px;"><br>
                     </div>
-
                     <div class="a-b-inputs" id="b-wrapper1">
                         <label>Author: </label>
                         <input class="inp" type = "text" id = "book-author" name = "author" style="font-size:18px;">
@@ -51,6 +47,15 @@
                     </div>
 
                   <div class="a-b-inputs" id="b-wrapper2">
+                    <label><br>Date Published: </label>
+                    <input class="inp" type = "date" id = "book-date" name = "date_published" style="font-size:18px;">
+
+                      <label>No. of Books: </label>
+                      <input class="inp" type = "text" id = "book-stocks" name = "number_of_stocks" style="font-size:18px;">
+
+
+                    </div>
+
                       <label>Designated Department: </label>
                         <select class="inp" name="department_id" id="department_id" required style="font-size:18px;">
                             <!--<option value="g1" disabled selected hidden>- - -</option>
@@ -73,9 +78,7 @@
                             <option name="department_id" value="8">Physical Education Department</option>
                             <option name="department_id" value="9">Teachers Education Department</option>
                         </select>
-                      <label>No. of Books: </label>
-                      <input class="inp" type = "text" id = "book-stocks" name = "number_of_stocks" style="font-size:18px;">
-                  </div>
+
 
                   <div class="a-b-inputs" id="b-img">
 
@@ -122,35 +125,35 @@
                           <input class="inp" type = "text" id = "thesis-owner" name = "thesis_owner" style="font-size:18px;">
                       </div>
 
-                      <div class="a-t-inputs" id="t-wrapper1">
-                          <label>Date Published: </label>
-                          <input class="inp" type = "date" id = "date-published" name="date_published" style="font-size:18px;">
+                      <div class="a-t-inputs" id="t-wrapper2">
+                          <label>Designated Course: </label>
+                            <select class="inp" name="t-course" id="t-course" required style="font-size:18px;">
+                              <option value="g1" disabled selected hidden>- - -</option>
+                              <option name="t-course" value="1">Bachelor of Science in Computer Science</option>
+                              <option name="t-course" value="2">Bachelor of Science in Information Technology</option>
+                              <option name="t-course" value="3">Bachelor of Arts in Journalism</option>
+                              <option name="t-course" value="4">Bachelor of Early Childhood Education</option>
+                              <option name="t-course" value="5">Bachelor of Elementary Education</option>
+                              <option name="t-course" value="6">Bachelor of Science in Business Management</option>
+                              <option name="t-course" value="7">Bachelor of Science in Entrepreneurship</option>
+                              <option name="t-course" value="8">Bachelor of Science in Hospitality Management</option>
+                              <option name="t-course" value="9">Bachelor of Science in Office Administration</option>
+                              <option name="t-course" value="10">Bachelor of Science in Psychology</option>
+                              <option name="t-course" value="11 ">Bachelor of Secondary Education</option>
+                              <option name="t-course" value="12">Bachelor of Secondary Education Major in English</option>
+                              <option name="t-course" value="13">Bachelor of Secondary Education Major in Mathematics</option>
+                              <option name="t-course" value="14">Teacher Certificate Program</option>
+                              <option name="t-course" value="15">Master in Professional Studies</option>
+                              <option name="t-course" value="16">Master of Arts in Education</option>
+                              <option name="t-course" value="17">Master of Business Administration</option>
+
+                            </select>
                       </div>
 
-                    <div class="a-t-inputs" id="t-wrapper2">
-                        <label>Designated Course: </label>
-                          <select class="inp" name="t-course" id="t-course" required style="font-size:18px;">
-                            <option value="g1" disabled selected hidden>- - -</option>
-                            <option name="t-course" value="1">Bachelor of Science in Computer Science</option>
-                            <option name="t-course" value="2">Bachelor of Science in Information Technology</option>
-                            <option name="t-course" value="3">Bachelor of Arts in Journalism</option>
-                            <option name="t-course" value="4">Bachelor of Early Childhood Education</option>
-                            <option name="t-course" value="5">Bachelor of Elementary Education</option>
-                            <option name="t-course" value="6">Bachelor of Science in Business Management</option>
-                            <option name="t-course" value="7">Bachelor of Science in Entrepreneurship</option>
-                            <option name="t-course" value="8">Bachelor of Science in Hospitality Management</option>
-                            <option name="t-course" value="9">Bachelor of Science in Office Administration</option>
-                            <option name="t-course" value="10">Bachelor of Science in Psychology</option>
-                            <option name="t-course" value="11 ">Bachelor of Secondary Education</option>
-                            <option name="t-course" value="12">Bachelor of Secondary Education Major in English</option>
-                            <option name="t-course" value="13">Bachelor of Secondary Education Major in Mathematics</option>
-                            <option name="t-course" value="14">Teacher Certificate Program</option>
-                            <option name="t-course" value="15">Master in Professional Studies</option>
-                            <option name="t-course" value="16">Master of Arts in Education</option>
-                            <option name="t-course" value="17">Master of Business Administration</option>
-                            
-                          </select>
-                    </div>
+                      <div class="a-t-inputs" id="t-wrapper3">
+                          <label>Date Published: </label>
+                          <input class="inp" type = "date" id = "thesis-date" name="date_published" style="font-size:18px;">
+                      </div>
 
                     <div class="a-t-inputs" id="t-img">
 

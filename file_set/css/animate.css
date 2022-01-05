@@ -1,4 +1,5 @@
-.container-transition, .mc-content, .md-content, .dropdown-content, #student, #instructor, .welcome-title, #add-b, #add-t{
+.container-transition, .mc-content, .md-content, .dropdown-content, #student, #instructor, .welcome-title, #add-b, #add-t,
+.dropdown-content-lib, .dropdown-content-rec, .dropdown-content-trans, .dropdown-content-acc{
   animation: transitionIn 0.75s;
 }
 
