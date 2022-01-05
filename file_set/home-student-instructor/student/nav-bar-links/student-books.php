@@ -41,11 +41,6 @@ session_start();
                                             <input type="hidden" name="student_id" value="<?php echo $student_id?>">
                                             <button class="btn btn-borrow" name="borrow_book">Borrow</button>
                                         </form>
-                                        <form action="student-rate-book-backend.php" method="post">
-                                            <input type="hidden" name="book_id" value="<?php echo $book_id?>">
-                                            <input type="hidden" name="book_rate" value="<?php echo $book_rate?>">
-                                            <button class="btn btn-borrow" name="rate_book">Rate</button>
-                                        </form>
                                     </div>
                             </div>
                         </div>
