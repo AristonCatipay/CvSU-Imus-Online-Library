@@ -4,6 +4,7 @@ session_start();
     include '../home-student-backend.php';
     include '../../../database/database_connection.php';
     $user_data = check_if_student_login($con);
+    $student_number = $user_data["student_number"];
 ?>
 <body>
 
@@ -21,8 +22,8 @@ session_start();
       </tr>
       <?php
         $query = "SELECT br.*, b.book_title
-        FROM borrow_request_student br, book b
-        WHERE br.book_id=b.book_id;
+        FROM borrow_request_student br, book b, students s
+        WHERE br.book_id=b.book_id and br.student_number=s.student_number and br.student_number=$student_number;
         ";
         $result = mysqli_query($con,$query);
         while ($data = mysqli_fetch_array($result)){
@@ -41,9 +42,9 @@ session_start();
             <td><?php echo $return_date?></td>
             <td><?php echo $request_type?></td>
           </tr>
-    </table>
       <?php
         }
     ?>
+    </table>
 </body>
 </html>
