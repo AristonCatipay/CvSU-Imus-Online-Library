@@ -8,7 +8,7 @@
   letter-spacing: 2px;
 }
 
-/* RECORDS STUDENTS */
+/* RECORDS STUDENTS /
 #records {
   top: 23%;
   left: 10%;
@@ -37,8 +37,8 @@
   border-bottom: 3px solid black;
 }
 
-/* TRANSACTIONS */
-#trans{
+/ TRANSACTIONS */
+#trans {
   top: 23%;
   left: 7.5%;
   width: 85%;
@@ -54,7 +54,7 @@
   padding: 20px 0;
   padding-left: 10px;
 }
-#trans td{
+#trans td {
   line-height: 1.6;
 }
 #trans tr {
