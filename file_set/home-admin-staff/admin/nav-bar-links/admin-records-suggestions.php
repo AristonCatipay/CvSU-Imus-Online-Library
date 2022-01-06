@@ -1,25 +1,44 @@
 <?php
 session_start();
     include '../admin-nav-bar.php';
+    include '../home-admin-backend.php';
+    include '../../../database/database_connection.php';
+    $user_data = check_if_admin_login($con);
+    $admin_name = $user_data["admin_name"];
+    $admin_number = $user_data["admin_number"];
+    $admin_email = $user_data["admin_email"];
+    $admin_contact = $user_data["admin_contact"];
+    $admin_password = $user_data["admin_password"];
 ?>
 <body>
-
   <div class="account-header">
     <h2>RECORDS / SUGGESTIONS</h2>
   </div>
 
-    <table id="records">
+    <table id="s-history">
       <tr>
         <th style="width:25%">Name</th>
         <th style="width:20%">Book Title</th>
         <th style="width:55%; text-align: center;">Message</th>
       </tr>
-      <tr>
-        <td>CARRASCO, CARLOS MIGUEL</td>
-        <td>BOOK TITLE BLAH BLAH</td>
-        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-      </tr>
+      <?php 
+        $query = "SELECT ss.*,s.student_name FROM `student_suggestion` AS ss, `students` AS s 
+        WHERE ss.student_number=s.student_number;";
+        $result = mysqli_query($con,$query);
+        while ($data = mysqli_fetch_array($result)){
+          $book_title = $data["book_name"];    
+          $suggestion_date  = $data["suggestion_date"];
+          $student_name = $data["student_name"];
+          $comment = $data["comment"];
+      ?>
+          <tr>
+            <td><?php echo $student_name?></td>
+            <td><?php echo $book_title?></td>
+            <td><?php echo $comment?></td>
+          </tr>
+      <?php
+        }
+    ?>
     </table>
-
 </body>
 </html>

@@ -53,10 +53,10 @@
                         <div class="dropdown">
                           <button onclick="dropacc()" class="dropbtn">Account</button>
                             <div id="dropaccount" class="dropdown-content-acc">
-                                <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/student-account-favorites.php" class ="drop-account" id="afavorites">Favorites</a>
-                                <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/student-account-suggestion.php" class ="drop-account" id="asuggestion">Suggestion</a>
-                                <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/student-account-history.php" class ="drop-account" id="ahistory">History</a>
-                                <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/student-account-profile.php" class ="drop-account" id="aprofile">Profile</a>
+                                <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/admin-account-favorites.php" class ="drop-account" id="afavorites">Favorites</a>
+                                <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/admin-account-suggestion.php" class ="drop-account" id="asuggestion">Suggestion</a>
+                                <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/admin-account-history.php" class ="drop-account" id="ahistory">History</a>
+                                <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/admin-account-profile.php" class ="drop-account" id="aprofile">Profile</a>
                             </div>
                         </div>
                       <button class="notif"><a href="#"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a></button>
