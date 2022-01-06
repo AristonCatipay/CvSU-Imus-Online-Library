@@ -15,18 +15,18 @@ session_start();
     <h2>RECORDS / SUGGESTIONS</h2>
   </div>
 
-    <table id="s-history">
+    <table id="a-suggestions">
       <tr>
         <th style="width:25%">Name</th>
         <th style="width:20%">Book Title</th>
         <th style="width:55%; text-align: center;">Message</th>
       </tr>
-      <?php 
-        $query = "SELECT ss.*,s.student_name FROM `student_suggestion` AS ss, `students` AS s 
+      <?php
+        $query = "SELECT ss.*,s.student_name FROM `student_suggestion` AS ss, `students` AS s
         WHERE ss.student_number=s.student_number;";
         $result = mysqli_query($con,$query);
         while ($data = mysqli_fetch_array($result)){
-          $book_title = $data["book_name"];    
+          $book_title = $data["book_name"];
           $suggestion_date  = $data["suggestion_date"];
           $student_name = $data["student_name"];
           $comment = $data["comment"];

@@ -50,15 +50,7 @@
                           </div>
                   </div>
 
-                        <div class="dropdown">
-                          <button onclick="dropacc()" class="dropbtn">Account</button>
-                            <div id="dropaccount" class="dropdown-content-acc">
-                                <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/admin-account-favorites.php" class ="drop-account" id="afavorites">Favorites</a>
-                                <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/admin-account-suggestion.php" class ="drop-account" id="asuggestion">Suggestion</a>
-                                <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/admin-account-history.php" class ="drop-account" id="ahistory">History</a>
-                                <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/admin-account-profile.php" class ="drop-account" id="aprofile">Profile</a>
-                            </div>
-                        </div>
+                      <button class="acn"><a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/admin-account-profile.php">Account</a></button>
                       <button class="notif"><a href="#"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a></button>
                       <button class="cct"><a href="#">?</a></button>
                       <button class="lo"><a href="/../cvsu-imus-online-library/file_set/login/logout-backend.php"><i class="fa fa-power-off fa-lg" aria-hidden="true"></i></a></button>
@@ -82,7 +74,7 @@
         });
 </script>
 
-  <!-- <script>
+  <script>
   function droplibrary() {
   document.getElementById("droplib").classList.toggle("show");
   }
@@ -90,7 +82,7 @@
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var dropdowns = document.getElementsByClassName("dropdown-content-lib");
   var i;
   for (i = 0; i < dropdowns.length; i++) {
     var openDropdown = dropdowns[i];
@@ -106,11 +98,9 @@
   function droprecords() {
   document.getElementById("droprec").classList.toggle("show");
   }
-
-  // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var dropdowns = document.getElementsByClassName("dropdown-content-rec");
   var i;
   for (i = 0; i < dropdowns.length; i++) {
     var openDropdown = dropdowns[i];
@@ -120,9 +110,9 @@
       }
     }
   }
-  </script> -->
+  </script>
 
-<!-- <script>
+<script>
   function droptransactions() {
   document.getElementById("droptransac").classList.toggle("show");
   }
@@ -139,23 +129,4 @@
       }
     }
   }
-</script> -->
-
-<!-- <script>
-  function dropacc() {
-  document.getElementById("dropaccount").classList.toggle("show");
-  }
-
-  window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-  var dropdowns = document.getElementsByClassName("dropdown-content-acc");
-  var i;
-  for (i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show')) {
-      openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-</script> -->
+</script>
