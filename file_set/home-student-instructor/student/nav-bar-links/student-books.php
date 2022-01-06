@@ -33,17 +33,15 @@ session_start();
                                         <li class="list-group-item">Author: <?php echo $author  ?></li>
                                         <li class="list-group-item">Date Published: <?php echo $date_published  ?></li>
                                         <li class="list-group-item">Stocks: <?php echo $number_of_stocks  ?></li>
-                                        <li class="list-group-item">Rate: <?php echo $book_rate  ?></li>
+                                        <li class="list-group-item">Recommended By: <?php echo $book_rate  ?> Student/s</li>
                                     </ul>
-                                    <div class="card-body">
-                                    <form action="student-borrow-books-btn-backend.php" method="post">
-                                        <input type="hidden" name="book_id" value="<?php echo $book_id?>">
-                                        <input type="hidden" name="student_id" value="<?php echo $student_id?>">
-                                        <button class="btn btn-borrow" name="borrow_book">Borrow</button>
-                                    </form>
-                                        <button class="btn btn-borrow" name="rate_book">Rate</button>
+                                    <div class="card-body"> 
+                                        <form action="student-borrow-books-btn-backend.php" method="post">  
+                                            <input type="hidden" name="book_id" value="<?php echo $book_id?>">
+                                            <input type="hidden" name="student_id" value="<?php echo $student_id?>">
+                                            <button class="btn btn-borrow" name="borrow_book">Borrow</button>
+                                        </form>
                                     </div>
-                                
                             </div>
                         </div>
                     <?php
