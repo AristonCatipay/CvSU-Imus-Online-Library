@@ -45,6 +45,7 @@
                       <button onclick="droptransactions()" class="transbtn">Transactions</button>
                           <div id="droptransac" class="dropdown-content-trans">
                               <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/book-request.php" id="drequest">Book Requests</a>
+                              <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/book-approved-request.php" id="drequest">Book Approved Requests</a>
                               <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/borrowed-books.php" id="dborrowed">Borrowed Books</a>
                               <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/returned-books.php" id="dreturned">Returned Books</a>
                           </div>
