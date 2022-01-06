@@ -97,7 +97,7 @@ session_start();
           $query =  "UPDATE instructors SET instructor_password='$new_password' WHERE instructor_number=$instructor_number";
           mysqli_query($con,$query);
           echo '<script type="text/javascript">alert("SUCCESSFUL!"); 
-            location="instructor-account-profile.php"; </script>';
+            location="/../cvsu-imus-online-library/file_set/login/logout-backend.php"; </script>';
         }else{
           echo '<script type="text/javascript">alert("NEW PASSWORD DOESNT MATCH!"); 
             location="instructor-account-profile.php"; </script>';

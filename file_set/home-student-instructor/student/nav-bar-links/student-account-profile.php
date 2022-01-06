@@ -96,7 +96,7 @@ session_start();
           $query =  "UPDATE students SET student_password='$new_password' WHERE student_number=$student_number";
           mysqli_query($con,$query);
           echo '<script type="text/javascript">alert("SUCCESSFUL!"); 
-            location="student-account-profile.php"; </script>';
+            location="/../cvsu-imus-online-library/file_set/login/logout-backend.php"; </script>';
         }else{
           echo '<script type="text/javascript">alert("NEW PASSWORD DOESNT MATCH!"); 
             location="student-account-profile.php"; </script>';
