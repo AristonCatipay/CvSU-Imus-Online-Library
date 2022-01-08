@@ -16,10 +16,11 @@ session_start();
       <tr>
         <th style="width:26%">Book Title</th>
         <th style="width:16%">Date Borrowed</th>
-        <th style="width:16%">Return Schedule</th>
+        <th style="width:10%">Return Schedule</th>
         <th style="width:16%">Date Returned</th>
         <th style="width:16%">Status</th>
         <th style="width:10%">Penalty</th>
+        <th style="width:6%">Rate</th>
       </tr>
       <?php
         $query = "SELECT br.*, b.book_title
@@ -37,6 +38,8 @@ session_start();
           $return_due_date = $data["return_due_date"];
           $return_date = $data["return_date"];
           $student_number = $data["student_number"];
+          $penalty = $data["fine"];
+          $book_id = $data["book_id"];
       ?>
           <tr>
             <td><?php echo $book_title?></td>
@@ -44,7 +47,12 @@ session_start();
             <td><?php echo $return_due_date?></td>
             <td><?php echo $return_date?></td>
             <td><?php echo $request_type?></td>
-          </tr>
+            <td><?php echo $penalty?></td>
+            <td><form action="student-rate-book-backend.php" method="post">
+                    <input type="hidden" name="book_id" value="<?php echo $book_id?>">
+                    <button class="btn btn-borrow" name="rate_book">RATE</button>
+                </form>
+            </td>
       <?php
         }
     ?>

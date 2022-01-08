@@ -9,8 +9,6 @@ session_start();
     {
         // something is posted 
         $book_id = $_POST['book_id'];
-        $book_rate = $_POST['book_rate'];
-
         
         $query = "SELECT book_rate FROM book WHERE book_id=$book_id;";
         $result = mysqli_query($con,$query);
