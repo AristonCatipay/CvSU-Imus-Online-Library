@@ -47,7 +47,7 @@
                   <input class="input-field" type = "password" id = "pass" name = "user_password" placeholder = "Password" maxlength = "32" required>
                 </div>
 
-                <p class="forgot">Forgot your password?</p>
+                <!-- <p class="forgot">Forgot your password?</p> -->
 
                 <a href="home.html"><button class="pushable" name="user_login">
                     <span class="front">SIGN IN</span>

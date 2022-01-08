@@ -1,9 +1,9 @@
 <?php
 session_start();
-    include '../student-nav-bar.php';
-    include '../home-student-backend.php';
+    include '../admin-nav-bar.php';
     include '../../../database/database_connection.php';
-    $user_data = check_if_student_login($con); 
+    include '../home-admin-backend.php';
+    $user_data = check_if_admin_login($con); 
 ?>
 
 <div class="container py-2" style="margin-top:100px;">
@@ -29,11 +29,11 @@ session_start();
                                     <li class="list-group-item">Recommended By: <?php echo $thesis_rate  ?></li>
                                 </ul>
                                 <div class="card-body">
-                                <form action="student-view-thesis-btn-backend.php" method="post" >
+                                <form action="admin-view-thesis-btn-backend.php" method="post">
                                     <input type="hidden" name="thesis_file" value="<?php echo $thesis_file?>">
                                     <button class="btn btn-borrow" name="view_thesis">View</button>
                                 </form>
-                                </div>
+                                </div>  
                             </div>
                         </div>
                     <?php
@@ -43,5 +43,3 @@ session_start();
         </div>
     </body>
 </html> 
-
-

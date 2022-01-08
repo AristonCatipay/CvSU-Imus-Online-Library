@@ -2,6 +2,9 @@
 session_start();
     include '../admin-nav-bar.php';
     include '../../../database/database_connection.php';
+    include '../home-admin-backend.php';
+    $user_data = check_if_admin_login($con);
+    $admin_number = $user_data["admin_number"];
 ?>
 <body>
 
@@ -52,7 +55,7 @@ session_start();
 if(isset($_POST["confirm_returned"])){
   $return_date = date('Y-m-d', strtotime($_POST['return_date']));
   if($return_date){
-    $query = "UPDATE borrow_request_student SET request_status='RETURNED', return_date='$return_date' WHERE transaction_id=$transaction_id";
+    $query = "UPDATE borrow_request_student SET request_status='RETURNED', return_date='$return_date', staff_return='$admin_number' WHERE transaction_id=$transaction_id";
     mysqli_query($con,$query);
     echo '<script type="text/javascript">alert("SUCCESSFULL!"); 
       location="book-approved-request.php"; </script>';

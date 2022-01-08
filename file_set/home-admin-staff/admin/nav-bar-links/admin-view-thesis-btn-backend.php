@@ -2,9 +2,9 @@
 session_start();
     include '../../../database/database_connection.php';    
     include '../../../custom_functions/functions.php';
-    include '../home-student-backend.php';
-    $user_data = check_if_student_login($con);
-    
+    include '../home-admin-backend.php';
+    $user_data = check_if_admin_login($con); 
+        
     if(isset($_POST["view_thesis"]))
     {
         // something is posted 

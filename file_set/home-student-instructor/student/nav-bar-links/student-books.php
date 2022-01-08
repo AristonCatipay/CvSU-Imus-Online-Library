@@ -6,7 +6,7 @@ session_start();
     $user_data = check_if_student_login($con);  
     $student_id = $user_data["student_number"];
 ?>
-        <div class="container py-2">
+        <div class="container py-2" style="margin-top:100px;">
             <div class="row mt-2">
                 <?php
                     $query = "SELECT * FROM book";
@@ -25,8 +25,7 @@ session_start();
                             <div class="card" style="width: 18rem;">
                                     <img class="card-img-top" src="<?php echo $title_photo_location ?>" alt="Card image cap" width="400px" height="400px">
                                         <div class="card-body">
-                                            <h5 class="card-title">Book Title:<?php echo $book_title ?></h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+                                            <h5 class="card-title">Book Title: <br><?php echo $book_title ?></h5>
                                         </div>
                                     <ul class="list-group list-group-flush" style="list-style:none">
                                         <li class="list-group-item">ISBN Number: <?php echo $ISBN_number ?></li>

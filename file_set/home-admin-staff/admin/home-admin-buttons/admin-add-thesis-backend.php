@@ -30,15 +30,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '2'){
@@ -54,15 +58,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '3'){
@@ -78,15 +86,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '4'){
@@ -102,15 +114,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '5'){
@@ -126,15 +142,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '6'){
@@ -150,15 +170,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '7'){
@@ -174,15 +198,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '8'){
@@ -198,15 +226,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '9'){
@@ -222,15 +254,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '10'){
@@ -246,15 +282,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '11'){
@@ -270,15 +310,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '12'){
@@ -294,15 +338,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '13'){
@@ -318,15 +366,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '14'){
@@ -342,15 +394,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '15'){
@@ -366,15 +422,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '16'){
@@ -390,15 +450,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
     if($t_course === '17'){
@@ -414,15 +478,19 @@ if (isset($_POST["submit_thesis"])){
 
                     move_uploaded_file($t_fileTmpName, $t_fileUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+            location="../home-admin.php"; </script>';
         }
     }
 }

@@ -43,7 +43,7 @@
                   <!-- EMAIL(ARIS)-->
                   <div id="eml">
                     <h2>CVSU Email</h2>
-                      <input class="input-field" type = "email" id = "email" name = "instructor_email" placeholder = "Email" maxlength = "75" required>
+                      <input class="input-field" type = "email" id = "email" name = "instructor_email" placeholder = "Email" pattern=".{9,75}" required title="9 characters minimum, 75 characters maximum">
                       <i id="emaillogo" class="fa fa-envelope fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END EMAIL(ARIS)-->
@@ -71,11 +71,11 @@
                   <!-- INSTRUCTOR CONTACT NUMBER(ARIS)-->
                   <div id="cont">
                     <h3>Contact Number(+639)</h3>
-                    <input class="input-field" type = "number" id = "cnt" name = "instructor_contact" placeholder = "e.g., 123456789" pattern=".{9,9}" required>
+                    <input class="input-field" type = "number" id = "cnt" name = "instructor_contact" placeholder = "e.g., 123456789" pattern=".{9,9}" required required title="9 characters minimum and maximum">
                     <i id="userlogo" class="fa fa-user fa-lg" aria-hidden="true"></i>
                   </div>
                   <!-- END INSTRUCTOR CONTACT NUMBER(ARIS)-->
-
+  
 
                 </div> <!-- LEFT END(ARIS)-->
 

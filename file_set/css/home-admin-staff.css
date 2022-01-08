@@ -106,7 +106,8 @@ nav.black {
   font-weight: 400;
 }
 .dropbtn,
-.transbtn, .acn {
+.transbtn,
+.acn {
   text-decoration: none;
   color: white;
   font-size: 25px;
@@ -166,16 +167,16 @@ nav.black {
 .dropdown:hover .dropdown-content-acc {
   display: block;
 } */
-.show{
+.show {
   display: block;
 }
-.show2{
+.show2 {
   display: block;
 }
-.show3{
+.show3 {
   display: block;
 }
-.show4{
+.show4 {
   display: block;
 }
 .welcome-title {
@@ -266,7 +267,7 @@ nav.black {
   border: 1px solid #888;
   border-radius: 30px;
   width: 60%;
-  height: 770px;
+  height: 1000px;
   /* text-align: center; */
 }
 .a-b-items,

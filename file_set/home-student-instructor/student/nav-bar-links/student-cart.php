@@ -43,7 +43,7 @@ session_start();
             <td><?php echo $return_date?></td>
             <td><?php echo $request_type?></td>
             <?php
-                if (($request_type==='REQUEST')||($request_type==='APPROVED')){
+                if (($request_type==='REQUEST')||($request_type==='APPROVED')||($request_type === 'BORROWED')){
                     ?>
                     <td>
                 <form action="student-cart.php" method="post">  

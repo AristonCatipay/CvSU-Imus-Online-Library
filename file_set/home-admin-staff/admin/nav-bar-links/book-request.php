@@ -2,6 +2,9 @@
 session_start();
     include '../admin-nav-bar.php';
     include '../../../database/database_connection.php';
+    include '../home-admin-backend.php';
+    $user_data = check_if_admin_login($con);
+    $admin_number = $user_data["admin_number"];
 ?>
 <body>
 
@@ -49,7 +52,7 @@ session_start();
 if(isset($_POST["confirm_request"])){
   $pickup_date = date('Y-m-d', strtotime($_POST['pick_up_date']));
   if($pickup_date){
-    $query = "UPDATE borrow_request_student SET request_status='APPROVED', pickup_date='$pickup_date' WHERE transaction_id=$transaction_id";
+    $query = "UPDATE borrow_request_student SET request_status='APPROVED', pickup_date='$pickup_date', staff_approve=$admin_number WHERE transaction_id=$transaction_id";
     mysqli_query($con,$query);
     echo '<script type="text/javascript">alert("SUCCESSFULL!"); 
       location="book-request.php"; </script>';
@@ -58,3 +61,4 @@ if(isset($_POST["confirm_request"])){
       location="book-request.php"; </script>';
   }
 }
+  

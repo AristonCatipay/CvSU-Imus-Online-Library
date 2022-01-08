@@ -36,28 +36,34 @@
 
                     <div class="a-b-inputs" id="b-title">
                       <label>Book Title: </label>
-                      <input class="inp" type = "text" id = "book-title" name = "book_title" style="font-size:18px;"><br>
+                      <input class="inp" type = "text" id = "book-title" name = "book_title" style="font-size:18px;" required><br>
                     </div>
                     <div class="a-b-inputs" id="b-wrapper1">
                         <label>Author: </label>
-                        <input class="inp" type = "text" id = "book-author" name = "author" style="font-size:18px;">
+                        <input class="inp" type = "text" id = "book-author" name = "author" style="font-size:18px;" required>
 
                         <label>ISBN: </label>
-                        <input class="inp" type = "text" id = "book-isbn" name = "ISBN_number" style="font-size:18px;">
+                        <input class="inp" type = "text" id = "book-isbn" name = "ISBN_number" style="font-size:18px;" required>
                     </div>
 
                   <div class="a-b-inputs" id="b-wrapper2">
                     <label><br>Date Published: </label>
-                    <input class="inp" type = "date" id = "book-date" name = "date_published" style="font-size:18px;">
+                    <input class="inp" type = "date" id = "book-date" name = "date_published" style="font-size:18px;" required>
 
                       <label>No. of Books: </label>
-                      <input class="inp" type = "text" id = "book-stocks" name = "number_of_stocks" style="font-size:18px;">
+                      <input class="inp" type = "text" id = "book-stocks" name = "number_of_stocks" style="font-size:18px;" required>
+
+                      <label>Rack Number: </label>
+                      <input class="inp" type = "text" id = "book-stocks" name = "rack_number" style="font-size:18px;" required>
+
+                      <label>Rack Level Number: </label>
+                      <input class="inp" type = "text" id = "book-stocks" name = "rack_level_number" style="font-size:18px;" required>
 
 
                     </div>
 
                       <label>Designated Department: </label>
-                        <select class="inp" name="department_id" id="department_id" required style="font-size:18px;">
+                        <select class="inp" name="department_id" id="department_id" required style="font-size:18px;" required>
                             <!--<option value="g1" disabled selected hidden>- - -</option>
                             <option name="department_id" value="BSCS">Bachelor of Science in Computer Science</option>
                             <option name="department_id" value="BSBM">Bachelor of Science in Business Management</option>
@@ -85,17 +91,17 @@
                     <label for="b-add-img1" class="custom-file-upload">
                         <i class="fa fa-file-image-o fa-3x" aria-hidden="true"></i><br>Add Image
                     </label>
-                    <input id="b-add-img1" type="file" name="title_photo_location">
+                    <input id="b-add-img1" type="file" name="title_photo_location" required>
 
                     <label for="b-add-img2" class="custom-file-upload">
                         <i class="fa fa-file-image-o fa-3x" aria-hidden="true"></i><br>Add Image
                     </label>
-                    <input id="b-add-img2" type="file" name="overview_photo_location">
+                    <input id="b-add-img2" type="file" name="overview_photo_location" required>
 
                     <label for="b-add-img3" class="custom-file-upload">
                         <i class="fa fa-file-image-o fa-3x" aria-hidden="true"></i><br>Add Image
                     </label>
-                    <input id="b-add-img3" type="file" name="table_of_contents_location">
+                    <input id="b-add-img3" type="file" name="table_of_contents_location" required>
                   </div>
 
                   <input type="submit" name="submit_book" value ="Add Book" id="b-submit">
@@ -117,17 +123,17 @@
 
                       <div class="a-t-inputs" id="t-title">
                         <label>Thesis Title: </label>
-                        <input class="inp" type = "text" id = "thesis-title" name = "thesis_title" style="font-size:18px;">
+                        <input class="inp" type = "text" id = "thesis-title" name = "thesis_title" style="font-size:18px;" required>
                       </div>
 
                       <div class="a-t-inputs" id="t-wrapper1">
                           <label>Owner/s: </label>
-                          <input class="inp" type = "text" id = "thesis-owner" name = "thesis_owner" style="font-size:18px;">
+                          <input class="inp" type = "text" id = "thesis-owner" name = "thesis_owner" style="font-size:18px;" required>
                       </div>
 
                       <div class="a-t-inputs" id="t-wrapper2">
                           <label>Designated Course: </label>
-                            <select class="inp" name="t-course" id="t-course" required style="font-size:18px;">
+                            <select class="inp" name="t-course" id="t-course" required style="font-size:18px;" required>
                               <option value="g1" disabled selected hidden>- - -</option>
                               <option name="t-course" value="1">Bachelor of Science in Computer Science</option>
                               <option name="t-course" value="2">Bachelor of Science in Information Technology</option>
@@ -152,7 +158,7 @@
 
                       <div class="a-t-inputs" id="t-wrapper3">
                           <label>Date Published: </label>
-                          <input class="inp" type = "date" id = "thesis-date" name="date_published" style="font-size:18px;">
+                          <input class="inp" type = "date" id = "thesis-date" name="date_published" style="font-size:18px;" required>
                       </div>
 
                     <div class="a-t-inputs" id="t-img">
@@ -160,7 +166,7 @@
                       <label for="t-add-img1" class="custom-file-upload2">
                           <i class="fa fa-file-image-o fa-3x" aria-hidden="true"></i><br>Add File
                       </label>
-                      <input id="t-add-img1" name="t_file" type="file">
+                      <input id="t-add-img1" name="t_file" type="file" required>
                     </div>
 
                     <input type="submit" name="submit_thesis" value ="Add Thesis" id="t-submit">

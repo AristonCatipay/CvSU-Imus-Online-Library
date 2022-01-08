@@ -12,6 +12,9 @@ if (isset($_POST["submit_book"])){
     $author = $_POST["author"];
     $date_published = $_POST["date_published"];
     $number_of_stocks = $_POST["number_of_stocks"];
+    $rack_number = $_POST["rack_number"];
+    $rack_level_number = $_POST["rack_level_number"];
+    
 
     $titlePhotoName = extract_name($title_photo_location);
     $overviewPhotoName = extract_name($overview_photo_location);
@@ -50,21 +53,26 @@ if (isset($_POST["submit_book"])){
                     $tableOfContentsPhotoUploadDestination = file_Destination($location,$tableOfContentsPhotoRenamed);
 
                     $queryResult = sql_query($con, $department_id, $book_title, $titlePhotoUploadDestination, $overviewPhotoUploadDestination, $tableOfContentsPhotoUploadDestination,
-                $ISBN_number,$author, $date_published,$number_of_stocks);
+                $ISBN_number,$author, $date_published,$number_of_stocks, $rack_number, $rack_level_number);
 
                     move_uploaded_file($titlePhotoTmpName, $titlePhotoUploadDestination);
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    // header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+                location="../home-admin.php"; </script>';
         }
     }
     if ($department_id === '1'){
@@ -82,21 +90,25 @@ if (isset($_POST["submit_book"])){
                     $tableOfContentsPhotoUploadDestination = file_Destination($location,$tableOfContentsPhotoRenamed);
 
                     $queryResult = sql_query($con, $department_id, $book_title, $titlePhotoUploadDestination, $overviewPhotoUploadDestination, $tableOfContentsPhotoUploadDestination,
-                $ISBN_number,$author, $date_published,$number_of_stocks);
+                $ISBN_number,$author, $date_published,$number_of_stocks,$rack_number, $rack_level_number);
 
                     move_uploaded_file($titlePhotoTmpName, $titlePhotoUploadDestination);
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+                location="../home-admin.php"; </script>';
         }
     }
     if ($department_id === '2'){
@@ -114,21 +126,25 @@ if (isset($_POST["submit_book"])){
                     $tableOfContentsPhotoUploadDestination = file_Destination($location,$tableOfContentsPhotoRenamed);
 
                     $queryResult = sql_query($con, $department_id, $book_title, $titlePhotoUploadDestination, $overviewPhotoUploadDestination, $tableOfContentsPhotoUploadDestination,
-                $ISBN_number,$author, $date_published,$number_of_stocks);
+                $ISBN_number,$author, $date_published,$number_of_stocks,$rack_number, $rack_level_number);
 
                     move_uploaded_file($titlePhotoTmpName, $titlePhotoUploadDestination);
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+                location="../home-admin.php"; </script>';
         }
     }
     if ($department_id === '3'){
@@ -146,21 +162,25 @@ if (isset($_POST["submit_book"])){
                     $tableOfContentsPhotoUploadDestination = file_Destination($location,$tableOfContentsPhotoRenamed);
 
                     $queryResult = sql_query($con, $department_id, $book_title, $titlePhotoUploadDestination, $overviewPhotoUploadDestination, $tableOfContentsPhotoUploadDestination,
-                $ISBN_number,$author, $date_published,$number_of_stocks);
+                $ISBN_number,$author, $date_published,$number_of_stocks ,$rack_number, $rack_level_number);
 
                     move_uploaded_file($titlePhotoTmpName, $titlePhotoUploadDestination);
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+                location="../home-admin.php"; </script>';
         }
     }
     if ($department_id === '4'){
@@ -178,21 +198,25 @@ if (isset($_POST["submit_book"])){
                     $tableOfContentsPhotoUploadDestination = file_Destination($location,$tableOfContentsPhotoRenamed);
 
                     $queryResult = sql_query($con, $department_id, $book_title, $titlePhotoUploadDestination, $overviewPhotoUploadDestination, $tableOfContentsPhotoUploadDestination,
-                $ISBN_number,$author, $date_published,$number_of_stocks);
+                $ISBN_number,$author, $date_published,$number_of_stocks ,$rack_number, $rack_level_number);
 
                     move_uploaded_file($titlePhotoTmpName, $titlePhotoUploadDestination);
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+                location="../home-admin.php"; </script>';
         }
     }
     if ($department_id === '5'){
@@ -210,21 +234,25 @@ if (isset($_POST["submit_book"])){
                     $tableOfContentsPhotoUploadDestination = file_Destination($location,$tableOfContentsPhotoRenamed);
 
                     $queryResult = sql_query($con, $department_id, $book_title, $titlePhotoUploadDestination, $overviewPhotoUploadDestination, $tableOfContentsPhotoUploadDestination,
-                $ISBN_number,$author, $date_published,$number_of_stocks);
+                $ISBN_number,$author, $date_published,$number_of_stocks ,$rack_number, $rack_level_number);
 
                     move_uploaded_file($titlePhotoTmpName, $titlePhotoUploadDestination);
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+                location="../home-admin.php"; </script>';
         }
     }
     if ($department_id === '6'){
@@ -242,21 +270,25 @@ if (isset($_POST["submit_book"])){
                     $tableOfContentsPhotoUploadDestination = file_Destination($location,$tableOfContentsPhotoRenamed);
 
                     $queryResult = sql_query($con, $department_id, $book_title, $titlePhotoUploadDestination, $overviewPhotoUploadDestination, $tableOfContentsPhotoUploadDestination,
-                $ISBN_number,$author, $date_published,$number_of_stocks);
+                $ISBN_number,$author, $date_published,$number_of_stocks ,$rack_number, $rack_level_number);
 
                     move_uploaded_file($titlePhotoTmpName, $titlePhotoUploadDestination);
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+                location="../home-admin.php"; </script>';
         }
     }
     if ($department_id === '7'){
@@ -274,21 +306,25 @@ if (isset($_POST["submit_book"])){
                     $tableOfContentsPhotoUploadDestination = file_Destination($location,$tableOfContentsPhotoRenamed);
 
                     $queryResult = sql_query($con, $department_id, $book_title, $titlePhotoUploadDestination, $overviewPhotoUploadDestination, $tableOfContentsPhotoUploadDestination,
-                $ISBN_number,$author, $date_published,$number_of_stocks);
+                $ISBN_number,$author, $date_published,$number_of_stocks ,$rack_number, $rack_level_number);
 
                     move_uploaded_file($titlePhotoTmpName, $titlePhotoUploadDestination);
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+                location="../home-admin.php"; </script>';
         }
     }
     if ($department_id === '8'){
@@ -306,21 +342,25 @@ if (isset($_POST["submit_book"])){
                     $tableOfContentsPhotoUploadDestination = file_Destination($location,$tableOfContentsPhotoRenamed);
 
                     $queryResult = sql_query($con, $department_id, $book_title, $titlePhotoUploadDestination, $overviewPhotoUploadDestination, $tableOfContentsPhotoUploadDestination,
-                $ISBN_number,$author, $date_published,$number_of_stocks);
+                $ISBN_number,$author, $date_published,$number_of_stocks ,$rack_number, $rack_level_number);
 
                     move_uploaded_file($titlePhotoTmpName, $titlePhotoUploadDestination);
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+                location="../home-admin.php"; </script>';
         }
     }
     if ($department_id === '9'){
@@ -338,40 +378,45 @@ if (isset($_POST["submit_book"])){
                     $tableOfContentsPhotoUploadDestination = file_Destination($location,$tableOfContentsPhotoRenamed);
 
                     $queryResult = sql_query($con, $department_id, $book_title, $titlePhotoUploadDestination, $overviewPhotoUploadDestination, $tableOfContentsPhotoUploadDestination,
-                $ISBN_number,$author, $date_published,$number_of_stocks);
+                $ISBN_number,$author, $date_published,$number_of_stocks ,$rack_number, $rack_level_number);
 
                     move_uploaded_file($titlePhotoTmpName, $titlePhotoUploadDestination);
                     move_uploaded_file($overviewPhotoTmpName, $overviewPhotoUploadDestination);
                     move_uploaded_file($tableOfContentsTmpName, $tableOfContentsPhotoUploadDestination);
                     
-                    header('Location: ../home-admin.php?uploadsuccessful');
+                    echo '<script type="text/javascript">alert("SUCCESSFUL!");    
+                    location="../home-admin.php"; </script>';
                 } else {
-                    echo "File/s too Big!";
+                    echo '<script type="text/javascript">alert("FILE TOO BIG!");    
+                    location="../home-admin.php"; </script>';
                 }
             } else {
-                echo "Error/s! Failed!";
+                echo '<script type="text/javascript">alert("ERROR UPLOADING!");    
+                location="../home-admin.php"; </script>';
             }
         } else {
-            echo "Incorrect File/s Extension!";
+            echo '<script type="text/javascript">alert("INCORRECT FILE EXTENSION!");    
+                location="../home-admin.php"; </script>';
         }
     }
     else {
-        echo "Failed!";
+        echo '<script type="text/javascript">alert("FAILED!");    
+                location="../home-admin.php"; </script>';
     }
 }
 // Functions for SQL 
 
 function sql_query ($con, $departmentId, $bookTitle, $titlePhotoLocation, $overviewPhotoLocation,
-    $tableOfContentsLocation, $ISBNNumber, $author, $datePublished, $numberOfStocks){
+    $tableOfContentsLocation, $ISBNNumber, $author, $datePublished, $numberOfStocks, $rack_number, $rack_level_number){
 
     $book_rate = 0;
 
     $query = "INSERT INTO book 
     (department_id, book_title, title_photo_location, overview_photo_location, 
-    table_of_contents_location, ISBN_number, author, date_published, number_of_stocks, book_rate)
+    table_of_contents_location, ISBN_number, author, date_published, number_of_stocks, book_rate, rack_number, rack_level_number)
     VALUES
     ('$departmentId', '$bookTitle', '$titlePhotoLocation', '$overviewPhotoLocation', 
-    '$tableOfContentsLocation', '$ISBNNumber', '$author', '$datePublished', '$numberOfStocks', '$book_rate')";
+    '$tableOfContentsLocation', '$ISBNNumber', '$author', '$datePublished', '$numberOfStocks', '$book_rate', '$rack_number', '$rack_level_number')";
 
     $queryResult = mysqli_query($con,$query);
     return $queryResult;

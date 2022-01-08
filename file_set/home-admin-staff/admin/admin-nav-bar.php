@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/../cvsu-imus-online-library/file_set/css/home-admin-staff2.css">
     <!-- <link rel="stylesheet" href="/../cvsu-imus-online-library/file_set/css/books.css"> -->
     <link rel="stylesheet" href="/../cvsu-imus-online-library/file_set/css/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="/../cvsu-imus-online-library/file_set/css/pics/favicon.png"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -27,8 +28,8 @@
                   <div class="dropdown">
                       <button onclick="droplibrary()" class="dropbtn">Library</button>
                           <div id="droplib" class="dropdown-content-lib">
-                              <a href="#" id="dbooks">Books</a>
-                              <a href="#" id="dthesis">Thesis</a>
+                              <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/admin-view-books.php" id="dbooks">Books</a>
+                              <a href="/../cvsu-imus-online-library/file_set/home-admin-staff/admin/nav-bar-links/admin-view-thesis.php" id="dthesis">Thesis</a>
                           </div>
                   </div>
 

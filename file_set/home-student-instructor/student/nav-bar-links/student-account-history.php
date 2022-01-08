@@ -14,11 +14,12 @@ session_start();
 
     <table id="s-history">
       <tr>
-        <th style="width:32%">Book Title</th>
-        <th style="width:20%">Date Borrowed</th>
-        <th style="width:20%">Return Schedule</th>
-        <th style="width:20%">Date Returned</th>
-        <th style="width:8%">Penalty</th>
+        <th style="width:26%">Book Title</th>
+        <th style="width:16%">Date Borrowed</th>
+        <th style="width:16%">Return Schedule</th>
+        <th style="width:16%">Date Returned</th>
+        <th style="width:16%">Status</th>
+        <th style="width:10%">Penalty</th>
       </tr>
       <?php
         $query = "SELECT br.*, b.book_title
@@ -42,6 +43,7 @@ session_start();
             <td><?php echo $transaction_date?></td>
             <td><?php echo $return_due_date?></td>
             <td><?php echo $return_date?></td>
+            <td><?php echo $request_type?></td>
           </tr>
       <?php
         }
