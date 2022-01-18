@@ -1,9 +1,9 @@
 <?php
-  include '../../login/login-backend.php';
-  include '../../database/database_connection.php';
-  include 'home-instructor-backend.php';
-  include 'instructor-nav-bar.php';
-  $user_data = check_if_instructor_login($con) 
+  include_once '../../login/login-backend.php';
+  include_once '../../database/database_connection.php';
+  include_once 'home-instructor-backend.php';
+  include_once 'instructor-nav-bar.php';
+  $user_data = check_if_instructor_login($con)
 ?>
       <div class="welcome-title">
 
@@ -18,8 +18,8 @@
         </div>
 
         <div class="wt-btns">
-          <a href="#"><button id="bt1">Books</button></a>
-          <a href="#"><button id="bt2">Thesis</button></a>
+          <a href="/../cvsu-imus-online-library/file_set/home-student-instructor/instructor/nav-bar-links/instructor-books.php"><button id="bt1">Books</button></a>
+          <a href="/../cvsu-imus-online-library/file_set/home-student-instructor/instructor/nav-bar-links/instructor-thesis.php"><button id="bt2">Thesis</button></a>
         </div>
       </div>
   </body>

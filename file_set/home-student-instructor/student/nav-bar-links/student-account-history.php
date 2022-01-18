@@ -50,6 +50,7 @@ session_start();
             <td><?php echo $penalty?></td>
             <td><form action="student-rate-book-backend.php" method="post">
                     <input type="hidden" name="book_id" value="<?php echo $book_id?>">
+                    <input type="hidden" name="transaction_id" value="<?php echo $transaction_id?>">
                     <button class="btn btn-borrow" name="rate_book">RATE</button>
                 </form>
             </td>

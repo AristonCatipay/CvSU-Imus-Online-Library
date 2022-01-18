@@ -2,8 +2,8 @@
 session_start();
     include '../../../database/database_connection.php';    
     include '../../../custom_functions/functions.php';
-    include '../home-student-backend.php';
-    $user_data = check_if_student_login($con);
+    include '../home-instructor-backend.php';
+    $user_data = check_if_instructor_login($con);
     
     if(isset($_POST["rate_book"]))
     {
@@ -11,7 +11,7 @@ session_start();
         $book_id = $_POST['book_id'];
         $transaction_id = $_POST['transaction_id'];
 
-        $query = "SELECT rated FROM borrow_request_student WHERE transaction_id=$transaction_id;";
+        $query = "SELECT rated FROM borrow_request_instructor WHERE transaction_id=$transaction_id;";
         $data = mysqli_query($con,$query);
         $data = mysqli_fetch_array($data);
         
@@ -29,18 +29,13 @@ session_start();
             $query = "UPDATE book SET book_rate='$new_rate' WHERE book_id='$book_id';";
             mysqli_query($con,$query);
             echo '<script type="text/javascript">alert("Request successful"); 
-            location="student-books.php"; </script>';
+            location="instructor-books.php"; </script>';
             die;
             mysqli_close($con);
         }else{
             echo '<script type="text/javascript">alert("You already Rated!"); 
-            location="student-books.php"; </script>';
+            location="instructor-books.php"; </script>';
         }
-
-
-        
-        
-        
-        
+     
     }
 ?>

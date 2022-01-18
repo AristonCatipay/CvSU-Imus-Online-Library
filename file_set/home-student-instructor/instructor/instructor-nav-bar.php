@@ -16,7 +16,7 @@
 <nav>
     <div class="logo-navbar" id="wholenavbar">
 
-      <a href ='/../cvsu-imus-online-library/file_set/home-student-instructor/instructor/home-instructor.php'><img class="logo" src="/../cvsu-imus-online-library/file_set/css/pics/logo-text.png"></a>
+      <a href ="/../cvsu-imus-online-library/file_set/home-student-instructor/instructor/home-instructor.php"><img class="logo" src="/../cvsu-imus-online-library/file_set/css/pics/logo-text.png"></a>
 
       <div class="nav-bar">
           <button class="hm"><a href='/../cvsu-imus-online-library/file_set/home-student-instructor/instructor/home-instructor.php'>Home</a></button>
