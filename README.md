@@ -1,6 +1,18 @@
 <img src="read me pictures\login.png" >
 
+---
+
+## ENTITY RELATIONSHIP DIAGRAM
+
 <img src="read me pictures\ERD.png" >
+
+## DATA FLOW DIAGRAM
+<img src="read me pictures\DFD.png" >
+
+
+## USE CASE DIAGRAM
+<img src="read me pictures\UML.png" >
+
 
 > TEAM
 
