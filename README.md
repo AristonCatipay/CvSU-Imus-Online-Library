@@ -1,21 +1,23 @@
-# cvsu-imus-online-library
- A Online Library System for CvSU - Imus Campus
+<img src="read me pictures\login.png" >
 
+<img src="read me pictures\ERD.png" >
 
-This online library system is created by a team of 4
-Jieselle Silva -    
-    Project Manager
-    UI/UX Designer
+> TEAM
 
-Carlos Miguel Carrasco 
-    Front-end Developer
+- Jieselle Silva
 
-Harvi Ramos 
-    Full-Stack Developer
+  1.  Project Manager
+  2.  UI/UX Designer
 
-Ariston Catipay 
-    Full-Stack Developer
-    Systems Integrator
+* Carlos Miguel Carrasco
 
+  1. Front-end Developer
 
-This is a project for Software Engineering Subject. 
+* Harvi Ramos
+
+  1. Documentation
+  1. Assistant Project Manager
+
+* Ariston Catipay
+  1. Full-Stack Developer
+  1. Systems Integrator

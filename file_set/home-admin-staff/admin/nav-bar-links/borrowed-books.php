@@ -55,7 +55,8 @@ session_start();
 if(isset($_POST["confirm_returned"])){
   $return_date = date('Y-m-d', strtotime($_POST['return_date']));
   if($return_date){
-    $query = "UPDATE borrow_request_student SET request_status='RETURNED', return_date='$return_date', staff_return='$admin_number' WHERE transaction_id=$transaction_id";
+    $query = "UPDATE borrow_request_student SET request_status='RETURNED', return_date='$return_date',
+    staff_return='$admin_number' WHERE transaction_id=$transaction_id";
     mysqli_query($con,$query);
     echo '<script type="text/javascript">alert("SUCCESSFULL!"); 
       location="book-approved-request.php"; </script>';
