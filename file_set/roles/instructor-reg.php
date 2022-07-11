@@ -8,6 +8,7 @@
           <link rel="stylesheet" href="../css/instructor-reg.css">
           <link rel="stylesheet" href="../css/animate.css">
           <link rel="shortcut icon" type="image/png" href="../css/pics/favicon.png"/>
+          <link rel="stylesheet" href="../js/functions"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
 
@@ -137,3 +138,4 @@
       </div> <!-- CONTAINER TRANSITION END(ARIS)-->
     </body>
 </html>
+

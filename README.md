@@ -16,9 +16,12 @@ Students and teachers are unable to physically visit the campus library to check
   1. HTML
   1. CSS
   1. Bootstrap
+  1. JavaScript
 - Back-end
   1. PHP
-  1. MySQL
+
+* Database
+  1. XAMPP - MySQL
 
 ---
 
@@ -51,6 +54,7 @@ Students and teachers are unable to physically visit the campus library to check
 
 - Harvi Ramos
 
+  1. Front-end Developer
   1. Technical Writer
   1. Assistant Project Manager
 
